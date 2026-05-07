@@ -1,6 +1,7 @@
 import Layout from "@/components/layout/Layout"
 import Bgmap from "@/components/sections/homepage1/Bgmap"
 import Brands1 from "@/components/sections/homepage1/Brands1"
+import Comparison1 from "@/components/sections/homepage1/Comparison1"
 import Cta1 from "@/components/sections/homepage1/Cta1"
 import Faqs1 from "@/components/sections/homepage1/Faqs1"
 import Hero1 from "@/components/sections/homepage1/Hero1"
@@ -20,6 +21,7 @@ export default function Home() {
             <Layout>
                 <Hero1 />
                 <Brands1 />
+                <Comparison1 />
                 <Services1 />
                 <Info1 />
                 <Info2 />

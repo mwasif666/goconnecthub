@@ -57,7 +57,7 @@ export default function Header2({ handleMobileMenuOpen }) {
             <header className={scroll ? "header sticky-bar  header-style-2 stick" : "header sticky-bar  header-style-2"}>
                 <div className="container">
                     <div className="header-middle">
-                        <div className="header-logo"><Link className="d-flex" href="/"><img alt="transp" src="/assets/imgs/template/logo.svg" /></Link></div>
+                        <div className="header-logo"><Link className="d-flex" href="/"><img alt="GoConnectHub" src="/logo.png" style={{ height: '45px', width: 'auto' }} /></Link></div>
                         <div className="header-contact">
                             <div className="box-header-contact-1 mr-30">
                                 <div className="icon-contact"> <img alt="transp" src="/assets/imgs/page/homepage3/address.png" /></div>
@@ -72,7 +72,7 @@ export default function Header2({ handleMobileMenuOpen }) {
 
                     <div className="main-header">
                         <div className="header-left">
-                            <div className="header-logo d-inline-block d-md-none"><Link className="d-flex" href="/"><img alt="Ecom" src="/assets/imgs/template/logo.svg" /></Link></div>
+                            <div className="header-logo d-inline-block d-md-none"><Link className="d-flex" href="/"><img alt="GoConnectHub" src="/logo.png" style={{ height: '45px', width: 'auto' }} /></Link></div>
                             <div className="header-nav">
                                 <nav className="nav-main-menu d-none d-xl-block">
                                     <Menu />

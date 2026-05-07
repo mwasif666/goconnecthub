@@ -22,7 +22,17 @@ function MyApp({ Component, pageProps }) {
             setLoading(false);
         }, 1000);
     }, []);
-    return <>{!loading ? <Component {...pageProps} /> : <Preloader />}</>;
+    return (
+        <>
+            <style jsx global>{`
+                html,
+                body {
+                    overflow-x: hidden;
+                }
+            `}</style>
+            {!loading ? <Component {...pageProps} /> : <Preloader />}
+        </>
+    );
 }
 
 export default MyApp;

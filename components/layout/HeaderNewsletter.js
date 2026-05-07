@@ -45,7 +45,7 @@ export default function HeaderNewsletter({ handleMobileMenuOpen }) {
                 <div className="container-sub">
                     <div className="main-header">
                         <div className="header-left">
-                            <div className="header-logo"><Link className="d-flex" href="/"><img alt="Ecom" src="assets/imgs/template/logo.svg" /></Link></div>
+                            <div className="header-logo"><Link className="d-flex" href="/"><img alt="GoConnectHub" src="/logo.png" style={{ height: '45px', width: 'auto' }} /></Link></div>
                             <div className="header-nav">
                                 <nav className="nav-main-menu d-none d-sm-block">
                                     <ul className="main-menu">

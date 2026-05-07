@@ -8,7 +8,7 @@ export default function FooterNewsletter() {
                     <div className="container-sub">
                         <div className="row">
                             <div className="col-sm-6 mb-30">
-                                <div className="mb-20"><img src="assets/imgs/template/logo-footer.svg" alt="transp" /></div>
+                                <div className="mb-20"><img src="/logo.png" alt="GoConnectHub" style={{ height: '45px', width: 'auto' }} /></div>
                                 <p className="font-xs mb-20 color-white">We fuse our global network with our depth of expertise in
                                     air freight, ocean freight, railway transportation, trucking, and multimode transportation,
                                     also we are providing sourcing, warehousing, E-commercial fulfillment, and value-added

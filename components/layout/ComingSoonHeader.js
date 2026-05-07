@@ -7,7 +7,7 @@ export default function ComingSoonHeader() {
                 <div className="container">
                     <div className="main-header">
                         <div className="header-left">
-                            <div className="header-logo"><Link className="d-flex" href="/"><img alt="Ecom" src="assets/imgs/template/logo.svg" /></Link></div>
+                            <div className="header-logo"><Link className="d-flex" href="/"><img alt="GoConnectHub" src="/logo.png" style={{ height: '45px', width: 'auto' }} /></Link></div>
                             <div className="header-nav">
                                 <nav className="nav-main-menu d-none d-xl-block">
                                     <ul className="main-menu">

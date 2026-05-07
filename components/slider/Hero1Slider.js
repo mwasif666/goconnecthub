@@ -6,6 +6,36 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 export default function Hero1Slider() {
     const [isOpen, setOpen] = useState(false)
+    const slides = [
+        {
+            backgroundImage:
+                "linear-gradient(90deg, rgba(4, 28, 47, 0.82) 0%, rgba(4, 28, 47, 0.58) 42%, rgba(4, 28, 47, 0.24) 100%), url(/assets/imgs/page/homepage1/banner-storage-unsplash.jpg)",
+            backgroundPosition: "center center",
+            eyebrow: "Smart Storage Solutions",
+            titleLines: ["Free Storage With", "Market Competitive Rates"],
+            description:
+                "We are providing free storage support with market competitive rates so your business can move inventory with more confidence and less pressure on cost.",
+        },
+        {
+            backgroundImage:
+                "linear-gradient(90deg, rgba(4, 28, 47, 0.78) 0%, rgba(4, 28, 47, 0.52) 42%, rgba(4, 28, 47, 0.2) 100%), url(/assets/imgs/page/homepage1/banner-containers-unsplash.jpg)",
+            backgroundPosition: "center center",
+            eyebrow: "Affordable Shipping Options",
+            titleLines: ["Cheapest Shipping Rates", "For Everyday Deliveries"],
+            description:
+                "Also offering cheapest shipping rates for practical, dependable delivery planning across your regular orders and growing shipment volumes.",
+        },
+        {
+            backgroundImage:
+                "linear-gradient(90deg, rgba(4, 28, 47, 0.8) 0%, rgba(4, 28, 47, 0.56) 42%, rgba(4, 28, 47, 0.22) 100%), url(/assets/imgs/page/homepage1/banner-truck-unsplash.jpg)",
+            backgroundPosition: "center center",
+            eyebrow: "Our Value Positioning",
+            titleLines: ["Storage, Shipping, And", "Cost-Effective Logistics"],
+            description:
+                "A stronger logistics offer for your customers with free storage, competitive market pricing, and reliable shipping rates combined in one service.",
+        },
+    ]
+
     return (
         <>
             <Swiper
@@ -14,7 +44,7 @@ export default function Hero1Slider() {
                 spaceBetween={0}
                 loop={true}
                 autoplay={{
-                    delay: 2500,
+                    delay: 5000,
                     disableOnInteraction: false,
                 }}
                 pagination={{
@@ -23,55 +53,38 @@ export default function Hero1Slider() {
                 }}
                 className="swiper-wrapper"
             >
-                <SwiperSlide>
-                    <div className="banner-1" style={{ backgroundImage: 'url(assets/imgs/page/homepage1/banner.png)' }}>
-                        <div className="container">
-                            <div className="row align-items-center">
-                                <div className="col-lg-12">
-                                    <p className="font-md color-white mb-15 wow animate__animated animate__fadeIn" data-wow-delay=".0s">Logistics &amp; Transportation</p>
-                                    <h1 className="color-white mb-25 wow animate__animated animate__fadeInUp" data-wow-delay=".0s">Digital &amp; Trusted Transport<br className="d-none d-lg-block" />Logistic Company</h1>
-                                    <div className="row">
-                                        <div className="col-lg-6">
-                                            <p className="font-md color-white mb-20 wow animate__animated animate__fadeInUp" data-wow-delay=".0s">Our experienced team of problem solvers and
-                                                a commitment to always align with our client’s business goals
-                                                and objectives is what drives mutual success.</p>
+                {slides.map((slide) => (
+                    <SwiperSlide key={slide.titleLines.join(" ")}>
+                        <div className="banner-1" style={{ backgroundImage: slide.backgroundImage, backgroundPosition: slide.backgroundPosition }}>
+                            <div className="container">
+                                <div className="row align-items-center">
+                                    <div className="col-lg-12">
+                                        <p className="font-md color-white mb-15 wow animate__animated animate__fadeInUp" data-wow-delay=".0s">{slide.eyebrow}</p>
+                                        <h1 className="color-white mb-25 wow animate__animated animate__fadeInUp" data-wow-delay=".0s">
+                                            {slide.titleLines[0]}
+                                            <br className="d-none d-lg-block" />
+                                            {slide.titleLines[1]}
+                                        </h1>
+                                        <div className="row">
+                                            <div className="col-lg-7">
+                                                <p className="font-md color-white mb-20 wow animate__animated animate__fadeInUp" data-wow-delay=".0s">{slide.description}</p>
+                                            </div>
+                                        </div>
+                                        <div className="box-button mt-30">
+                                            <Link className="btn btn-brand-1-big hover-up mr-40 wow animate__animated animate__fadeInUp" href="#">Calculate Package</Link>
+                                            <a className="btn btn-play popup-youtube hover-up wow animate__animated animate__fadeInUp" onClick={() => setOpen(true)}>
+                                                <img className="wow animate__animated animate__fadeInUp" src="/assets/imgs/template/icons/play.svg" alt="" />How it work
+                                                ?
+                                            </a>
                                         </div>
                                     </div>
-                                    <div className="box-button mt-30">
-                                        <Link className="btn btn-brand-1-big hover-up mr-40 wow animate__animated animate__fadeInUp" href="#">Calculate Package</Link>
-                                        <a className="btn btn-play popup-youtube hover-up wow animate__animated animate__fadeInUp" onClick={() => setOpen(true)}>
-                                            <img className="wow animate__animated animate__fadeInUp" src="/assets/imgs/template/icons/play.svg" alt="" />How it work
-                                            ?</a></div>
-
                                 </div>
-                                <ModalVideo channel='youtube' autoplay isOpen={isOpen} videoId="vfhzo499OeA" onClose={() => setOpen(false)} />
                             </div>
                         </div>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className="banner-1" style={{ backgroundImage: 'url(assets/imgs/page/homepage1/banner-2.png)' }}>
-                        <div className="container">
-                            <div className="row align-items-center">
-                                <div className="col-lg-12">
-                                    <p className="font-md color-white mb-15 wow animate__animated animate__fadeInUp" data-wow-delay=".0s">Logistics &amp; Transportation</p>
-                                    <h1 className="color-white mb-25 wow animate__animated animate__fadeInUp" data-wow-delay=".0s">Digital &amp; Trusted Transport<br className="d-none d-lg-block" />Logistic Company</h1>
-                                    <div className="row">
-                                        <div className="col-lg-6">
-                                            <p className="font-md color-white mb-20 wow animate__animated animate__fadeInUp" data-wow-delay=".0s">Our experienced team of problem solvers and
-                                                a commitment to always align with our client’s business goals
-                                                and objectives is what drives mutual success.</p>
-                                        </div>
-                                    </div>
-                                    <div className="box-button mt-30"><Link className="btn btn-brand-1-big hover-up mr-40 wow animate__animated animate__fadeInUp" href="#">Calculate Package</Link><a className="btn btn-play popup-youtube hover-up wow animate__animated animate__fadeInUp" onClick={() => setOpen(true)}><img className="wow animate__animated animate__fadeInUp" src="/assets/imgs/template/icons/play.svg" alt="" />How it work
-                                        ?</a></div>
-                                </div>
-                                <ModalVideo channel='youtube' autoplay isOpen={isOpen} videoId="vfhzo499OeA" onClose={() => setOpen(false)} />
-                            </div>
-                        </div>
-                    </div>
-                </SwiperSlide>
+                    </SwiperSlide>
+                ))}
             </Swiper>
+            <ModalVideo channel='youtube' autoplay isOpen={isOpen} videoId="vfhzo499OeA" onClose={() => setOpen(false)} />
             <div className="swiper-pagination swiper-pagination-banner" />
         </>
     )
