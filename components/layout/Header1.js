@@ -69,7 +69,7 @@ export default function Header({ topBarStyle, handleMobileMenuOpen }) {
                             </div>
                             <div className="header-right">
                                 <div className="d-none d-sm-inline-block">
-                                    <Link className="btn btn-brand-1 hover-up" href="/request-a-quote" style={{ background: '#FFC107', borderColor: '#FFC107', color: '#000', fontWeight: '700', letterSpacing: '0.05em' }}>GET QUOTE</Link>
+                                    <Link className="btn btn-brand-1 hover-up" href="/request-a-quote" style={{ fontWeight: '700', letterSpacing: '0.05em' }}>GET QUOTE</Link>
                                 </div>
                             </div>
                         </div>

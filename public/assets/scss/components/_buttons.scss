@@ -10,14 +10,14 @@
     position: relative;
     &.btn-brand-1 {
         padding: 9px 20px;
-        color: $color-gray-900;
+        color: $color-white;
         background: $color-brand-1;
         border-radius: 0px;
         font-size: $font-sm;
         line-height: 14px;
         font-weight: 500;
         svg {
-            color: $color-gray-900;
+            color: $color-white;
             height: 20px;
             margin-right: 8px;
         }
@@ -31,14 +31,14 @@
     }
     &.btn-brand-1-big {
         padding: 18px 26px;
-        color: $color-brand-2;
+        color: $color-white;
         background: $color-brand-1;
         border-radius: 0px;
         font-size: $font-sm;
         line-height: 14px;
         font-weight: 500;
         svg {
-            color: $color-gray-900;
+            color: $color-white;
             height: 20px;
             margin-right: 8px;
         }
@@ -68,7 +68,7 @@
     }
     &.btn-calculator {
         padding: 18px 26px;
-        color: $color-brand-2;
+        color: $color-white;
         background: $color-brand-1;
         border-radius: 0px;
         font-size: 15px;
@@ -139,14 +139,14 @@
     }
     &.btn-get-quote {
         padding: 21px 40px;
-        color: $color-gray-900;
+        color: $color-white;
         background: $color-brand-1;
         border-radius: 0px;
         font-size: 22px;
         line-height: 22px;
         font-weight: 500;
         svg {
-            color: $color-gray-900;
+            color: $color-white;
             height: 26px;
             margin-right: 13px;
         }
@@ -174,12 +174,12 @@
             transition-duration: 0.2s;
         }
         &:hover {
-            color: $color-gray-900 !important;
+            color: $color-white !important;
             background-color: $color-brand-1;
             svg {
                 transform: rotate(-45deg);
                 transition-duration: 0.2s;
-                color: $color-brand-1 !important;
+                color: $color-white !important;
             }
         }
         &.color-brand-1 {
@@ -194,7 +194,7 @@
         padding: 7px 10px 7px 11px;
         background: $color-brand-1;
         border-radius: 0px;
-        color: $color-brand-2;
+        color: $color-white;
         font-size: 12px;
         line-height: 12px;
         font-weight: 400;
@@ -239,7 +239,7 @@
     }
     &.btn-border-brand-1 {
         background: $color-brand-1;
-        color: $color-brand-2;
+        color: $color-white;
         border-radius: 4px;
         padding: 8px 10px 8px 11px;
         font-size: 12px;

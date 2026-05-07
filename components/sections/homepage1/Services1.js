@@ -208,8 +208,8 @@ export default function Services1() {
                     display: inline-flex;
                     align-items: center;
                     justify-content: center;
-                    background: linear-gradient(180deg, rgba(254, 194, 1, 0.22) 0%, rgba(254, 194, 1, 0.08) 100%);
-                    color: #041c2f;
+                    background: linear-gradient(180deg, rgba(55, 161, 165, 0.22) 0%, rgba(55, 161, 165, 0.08) 100%);
+                    color: #184f69;
                 }
 
                 .service-icon-wrap :global(svg) {

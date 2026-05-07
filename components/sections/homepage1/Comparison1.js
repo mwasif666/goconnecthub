@@ -92,8 +92,8 @@ export default function Comparison1() {
                     justify-content: center;
                     padding: 8px 16px;
                     border-radius: 999px;
-                    background: rgba(254, 194, 1, 0.15);
-                    color: #041c2f;
+                    background: rgba(55, 161, 165, 0.14);
+                    color: #184f69;
                     font-size: 14px;
                     font-weight: 700;
                     letter-spacing: 0.02em;
@@ -113,7 +113,7 @@ export default function Comparison1() {
                     min-width: 920px;
                     border-radius: 24px;
                     overflow: hidden;
-                    border: 1px solid rgba(4, 28, 47, 0.08);
+                    border: 1px solid rgba(24, 79, 105, 0.1);
                     background: #ffffff;
                 }
 
@@ -123,11 +123,11 @@ export default function Comparison1() {
                 }
 
                 .comparison-row:not(:last-child) {
-                    border-bottom: 1px solid rgba(4, 28, 47, 0.08);
+                    border-bottom: 1px solid rgba(24, 79, 105, 0.1);
                 }
 
                 .comparison-row-head {
-                    background: #041c2f;
+                    background: #184f69;
                     color: #ffffff;
                 }
 
@@ -147,23 +147,23 @@ export default function Comparison1() {
                 }
 
                 .comparison-cell-feature {
-                    border-right: 1px solid rgba(4, 28, 47, 0.08);
+                    border-right: 1px solid rgba(24, 79, 105, 0.1);
                 }
 
                 .comparison-cell-us {
-                    border-right: 1px solid rgba(4, 28, 47, 0.08);
-                    background: linear-gradient(180deg, rgba(254, 194, 1, 0.14) 0%, rgba(254, 194, 1, 0.06) 100%);
+                    border-right: 1px solid rgba(24, 79, 105, 0.1);
+                    background: linear-gradient(180deg, rgba(55, 161, 165, 0.14) 0%, rgba(55, 161, 165, 0.06) 100%);
                 }
 
                 .comparison-row-head .comparison-cell-us {
-                    background: linear-gradient(180deg, #0a304f 0%, #08304e 100%);
+                    background: linear-gradient(180deg, #1f6781 0%, #184f69 100%);
                 }
 
                 .feature-title {
                     font-size: 18px;
                     line-height: 1.45;
                     font-weight: 700;
-                    color: #041c2f;
+                    color: #2b3941;
                 }
 
                 .value-pill {
@@ -177,13 +177,13 @@ export default function Comparison1() {
                 }
 
                 .value-pill-us {
-                    background: rgba(254, 194, 1, 0.18);
-                    color: #041c2f;
+                    background: rgba(55, 161, 165, 0.18);
+                    color: #184f69;
                 }
 
                 .value-pill-others {
                     background: #f3f7f9;
-                    color: #5d6b75;
+                    color: #2b3941;
                 }
 
                 @media (max-width: 991px) {

@@ -9,7 +9,7 @@ export default function Hero1Slider() {
     const slides = [
         {
             backgroundImage:
-                "linear-gradient(90deg, rgba(4, 28, 47, 0.82) 0%, rgba(4, 28, 47, 0.58) 42%, rgba(4, 28, 47, 0.24) 100%), url(/assets/imgs/page/homepage1/banner-storage-unsplash.jpg)",
+                "linear-gradient(90deg, rgba(24, 79, 105, 0.84) 0%, rgba(24, 79, 105, 0.58) 42%, rgba(24, 79, 105, 0.22) 100%), url(/assets/imgs/page/homepage1/banner-storage-unsplash.jpg)",
             backgroundPosition: "center center",
             eyebrow: "Smart Storage Solutions",
             titleLines: ["Free Storage With", "Market Competitive Rates"],
@@ -18,7 +18,7 @@ export default function Hero1Slider() {
         },
         {
             backgroundImage:
-                "linear-gradient(90deg, rgba(4, 28, 47, 0.78) 0%, rgba(4, 28, 47, 0.52) 42%, rgba(4, 28, 47, 0.2) 100%), url(/assets/imgs/page/homepage1/banner-containers-unsplash.jpg)",
+                "linear-gradient(90deg, rgba(24, 79, 105, 0.8) 0%, rgba(24, 79, 105, 0.52) 42%, rgba(24, 79, 105, 0.2) 100%), url(/assets/imgs/page/homepage1/banner-containers-unsplash.jpg)",
             backgroundPosition: "center center",
             eyebrow: "Affordable Shipping Options",
             titleLines: ["Cheapest Shipping Rates", "For Everyday Deliveries"],
@@ -27,7 +27,7 @@ export default function Hero1Slider() {
         },
         {
             backgroundImage:
-                "linear-gradient(90deg, rgba(4, 28, 47, 0.8) 0%, rgba(4, 28, 47, 0.56) 42%, rgba(4, 28, 47, 0.22) 100%), url(/assets/imgs/page/homepage1/banner-truck-unsplash.jpg)",
+                "linear-gradient(90deg, rgba(24, 79, 105, 0.82) 0%, rgba(24, 79, 105, 0.56) 42%, rgba(24, 79, 105, 0.22) 100%), url(/assets/imgs/page/homepage1/banner-truck-unsplash.jpg)",
             backgroundPosition: "center center",
             eyebrow: "Our Value Positioning",
             titleLines: ["Storage, Shipping, And", "Cost-Effective Logistics"],

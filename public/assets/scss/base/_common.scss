@@ -218,11 +218,12 @@ input[type="number"]:focus,
 body
 {
     font-family: $font-head;
+    color: $color-gray-700;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: $font-head;
     font-style: normal;
-    color: #000000;
+    color: $color-black;
     font-weight: 600;
 }
 h1 {
