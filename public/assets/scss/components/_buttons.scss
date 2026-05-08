@@ -88,19 +88,23 @@
             height: 16px;
             line-height: 16px;
             text-align: center;
-            background-color: $color-brand-2;
+            background-color: transparent;
+            border: 1px solid $color-brand-2;
+            transition: background-color 0.2s, border-color 0.2s;
             svg {
                 height: 10px;
-                color: $color-white;
+                color: $color-brand-2;
                 transform: rotate(-45deg);
                 transition-duration: 0.2s;
             }
         }
         &:hover {
-            color: $color-brand-1 !important;
+            color: $color-brand-2 !important;
             span {
+                background-color: $color-brand-2;
+                border-color: $color-brand-2;
                 svg {
-                    color: $color-brand-1;
+                    color: $color-white;
                 }
             }
         }

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { useState } from "react";
+import { services } from "@/util/servicesData";
 
 export default function Sidebar({ openClass, handleMobileMenuClose }) {
     const [isActive, setIsActive] = useState({
@@ -39,34 +40,25 @@ export default function Sidebar({ openClass, handleMobileMenuClose }) {
                                             <span className="menu-expand"><svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg></span>
                                             <Link href="/services">Services</Link>
                                             <ul className={isActive.key == 1 ? "sub-menu d-block" : "sub-menu d-none"}>
-                                                <li><Link href="/services">Warehousing &amp; Storage</Link></li>
-                                                <li><Link href="/services">Pick &amp; Pack Fulfilment</Link></li>
-                                                <li><Link href="/services">FBA &amp; FBM Fulfilment</Link></li>
-                                                <li><Link href="/services">Kitting &amp; Bundling</Link></li>
-                                                <li><Link href="/services">Repackaging &amp; Relabelling</Link></li>
-                                                <li><Link href="/services">Wholesale (B2B) Fulfilment</Link></li>
-                                                <li><Link href="/services">Cross Docking Service</Link></li>
-                                                <li><Link href="/services">Return Handling</Link></li>
-                                                <li><Link href="/services">Container Unloading</Link></li>
+                                                {services.map((service) => (
+                                                    <li key={service.slug}><Link href={`/services/${service.slug}`}>{service.title}</Link></li>
+                                                ))}
                                             </ul>
                                         </li>
                                         <li><Link href="/about">About</Link></li>
-                                        <li><Link href="/portal">Portal</Link></li>
                                         <li><Link href="/contact">Contact</Link></li>
                                     </ul>
                                 </nav>
                             </div>
                             <div className="site-copyright color-grey-400 mt-0">
                                 <div className="box-download-app">
-                                    <p className="font-xs color-grey-900 mb-25">Download our Apps and get extra 15% Discount on your
-                                        first Order…!</p>
+                                    <p className="font-xs color-grey-900 mb-25">Go Connect Hub fulfilment support for sellers and growing brands.</p>
                                     <div className="mb-25">
-                                        <div className="d-flex"><Link className="mr-10" href="#"><img src="/assets/imgs/template/appstore-btn.png" alt="transp" /></Link><Link href="#"><img src="/assets/imgs/template/google-play-btn.png" alt="transp" /></Link>
+                                        <div className="d-flex"><Link className="mr-10" href="#"><img src="/assets/imgs/template/appstore-btn.png" alt="Go Connect Hub" /></Link><Link href="#"><img src="/assets/imgs/template/google-play-btn.png" alt="Go Connect Hub" /></Link>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="mb-0"><span className="font-xs color-grey-500">©Transp Official {new Date().getFullYear()}. All right
-                                    reversed.</span></div>
+                                <div className="mb-0"><span className="font-xs color-grey-500">Go Connect Hub {new Date().getFullYear()}. All rights reserved.</span></div>
                             </div>
                         </div>
                     </div>

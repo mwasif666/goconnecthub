@@ -59,7 +59,7 @@ export default function Howitwork2() {
                                 </li>
                             </ul>
                         </div>
-                        <div className="box-button-play-2"><a className="btn btn-play popup-youtube hover-up" onClick={() => setOpen(true)}><img src="/assets/imgs/page/homepage4/play-icon.png" alt="transp" /><span className="color-brand-2 wow animate__animated animate__fadeIn">How it work ?<br />Watch video
+                        <div className="box-button-play-2"><a className="btn btn-play popup-youtube hover-up" onClick={() => setOpen(true)}><img src="/assets/imgs/template/icons/play.svg" alt="transp" /><span className="color-brand-2 wow animate__animated animate__fadeIn">How it work ?<br />Watch video
                             tour</span></a></div>
                             <ModalVideo channel='youtube' autoplay isOpen={isOpen} videoId="vfhzo499OeA" onClose={() => setOpen(false)} />
                     </div>

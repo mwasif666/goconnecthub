@@ -1,54 +1,5 @@
 import Link from "next/link";
-
-const services = [
-    {
-        title: "Warehousing & Storage",
-        description: "Secure storage space for fast-moving, seasonal, and overflow inventory with organized stock handling.",
-        icon: "warehouse",
-    },
-    {
-        title: "Pick & Pack Fulfilment",
-        description: "Accurate order picking, packing, and dispatch workflows designed for smooth day-to-day ecommerce operations.",
-        icon: "box",
-    },
-    {
-        title: "FBA & FBM Fulfilment",
-        description: "Amazon-ready fulfilment support for both FBA prep requirements and FBM order processing across channels.",
-        icon: "amazon",
-    },
-    {
-        title: "Kitting & Bundling",
-        description: "Assemble multi-item bundles, promotional kits, and custom product sets with consistent packing standards.",
-        icon: "bundle",
-    },
-    {
-        title: "Repackaging & Relabelling",
-        description: "Update labels, barcodes, and packaging formats to meet platform, retail, or customer-specific requirements.",
-        icon: "label",
-    },
-    {
-        title: "Wholesale (B2B) Fulfilment",
-        description: "Manage carton, pallet, and bulk order fulfilment for wholesale accounts with structured outbound handling.",
-        icon: "wholesale",
-    },
-    {
-        title: "Cross Docking Service",
-        description: "Move inbound inventory quickly through the warehouse with minimal storage time and faster outbound turnaround.",
-        icon: "transfer",
-    },
-    {
-        title: "Return Handling",
-        description: "Process customer returns efficiently with checking, sorting, restocking, and reporting support.",
-        icon: "returns",
-    },
-    {
-        title: "Container Unloading",
-        description: "Unload containers safely and efficiently to speed up receiving, inventory intake, and warehouse flow.",
-        icon: "container",
-    },
-];
-
-const featuredServices = services.slice(0, 6);
+import { featuredServices } from "@/util/servicesData";
 
 function ServiceIcon({ type }) {
     const commonProps = {
@@ -162,7 +113,7 @@ export default function Services1() {
                         <div className="bg-under" />
                         <div className="row">
                             {featuredServices.map((service) => (
-                                <div className="col-lg-4 col-md-6 wow animate__animated animate__fadeIn" key={service.title}>
+                                <div className="col-lg-4 col-md-6 wow animate__animated animate__fadeIn" key={service.slug}>
                                     <div className="card-offer hover-up">
                                         <div className="card-image">
                                             <span className="service-icon-wrap">
@@ -173,7 +124,7 @@ export default function Services1() {
                                             <h5 className="color-brand-2 mb-15">{service.title}</h5>
                                             <p className="font-sm color-grey-900 mb-35">{service.description}</p>
                                             <div className="box-button-offer mb-30">
-                                                <Link className="btn btn-link font-sm color-brand-2" href="/services">
+                                                <Link className="btn btn-link font-sm color-brand-2" href={`/services/${service.slug}`}>
                                                     View Details
                                                     <span>
                                                         <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

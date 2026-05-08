@@ -1097,19 +1097,25 @@ body {
     height: 16px;
     line-height: 16px;
     text-align: center;
-    background-color: #184f69;
+    background-color: transparent;
+    border: 1px solid #184f69;
+    transition: background-color 0.2s, border-color 0.2s;
 }
 .btn.btn-link span svg {
     height: 10px;
-    color: #fff;
+    color: #184f69;
     transform: rotate(-45deg);
     transition-duration: 0.2s;
 }
 .btn.btn-link:hover {
-    color: #37a1a5 !important;
+    color: #184f69 !important;
+}
+.btn.btn-link:hover span {
+    background-color: #184f69;
+    border-color: #184f69;
 }
 .btn.btn-link:hover span svg {
-    color: #37a1a5;
+    color: #fff;
 }
 .btn.btn-link-medium {
     font-size: 15px;
@@ -3751,13 +3757,13 @@ iframe {
 }
 
 .footer-1 {
-    background-color: #184f69;
+    background-color: #0a1e2c;
     margin: 0px 0px 0px 0px;
     padding: 90px 0px 25px 0px;
 }
 
 .footer-2 {
-    background-color: #184f69;
+    background-color: #071520;
     color: #f2f3f4;
 }
 
@@ -5940,7 +5946,7 @@ textarea.form-control {
 
 .accordion-button:not(.collapsed) {
     background-color: #37a1a5;
-    color: #184f69;
+    color: #ffffff;
 }
 .accordion-button:not(.collapsed)::after {
     background-image: url("../imgs/page/homepage1/up.svg");

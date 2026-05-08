@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(sed -i 's/fill=\"#FEC201\"/fill=\"#ffffff\"/' \"d:/wasdata/1.Transp-Nextjs/public/assets/imgs/page/homepage1/down.svg\")",
+      "Bash(sed -i 's/fill=\"#034460\"/fill=\"#ffffff\"/' \"d:/wasdata/1.Transp-Nextjs/public/assets/imgs/page/homepage1/up.svg\")"
+    ]
+  }
+}

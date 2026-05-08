@@ -21,19 +21,19 @@ export default function Home() {
             <Layout>
                 <Hero1 />
                 <Brands1 />
-                <Comparison1 />
                 <Services1 />
-                <Info1 />
-                <Info2 />
                 <Howitwork1 />
+                <Comparison1 />
                 <Testimonial1 />
-                <Projects1 />
-                <Requestquote1 />
-                <Pricing1 />
-                <Faqs1 />
                 <Cta1 />
-                <News1 />
-                <Bgmap />
+                <Faqs1 />
+                {/* <Info1 /> */}
+                {/* <Info2 /> */}
+                {/* <Projects1 /> */}
+                {/* <Requestquote1 /> */}
+                {/* <Pricing1 /> */}
+                {/* <News1 /> */}
+                {/* <Bgmap /> */}
             </Layout>
         </>
     )
