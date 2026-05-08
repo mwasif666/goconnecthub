@@ -1038,18 +1038,26 @@ body {
     color: #fff;
 }
 .btn.btn-brand-1-big {
-    padding: 18px 26px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 58px;
+    padding: 0 30px;
     color: #fff;
     background: #37a1a5;
-    border-radius: 0px;
-    font-size: 14px;
-    line-height: 14px;
-    font-weight: 500;
+    border: 2px solid #37a1a5;
+    border-radius: 6px;
+    font-size: 15px;
+    line-height: 1;
+    font-weight: 800;
+    gap: 10px;
 }
 .btn.btn-brand-1-big svg {
     color: #fff;
-    height: 20px;
-    margin-right: 8px;
+    width: 18px;
+    height: 18px;
+    margin-right: 0;
+    flex: 0 0 18px;
 }
 .btn.btn-brand-1-big:hover {
     background-color: #184f69;
@@ -1059,16 +1067,22 @@ body {
     color: #fff;
 }
 .btn.btn-brand-2 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     font-size: 15px;
-    line-height: 15px;
-    font-weight: 500;
+    line-height: 1;
+    font-weight: 800;
     color: #fff;
-    padding: 17px 26px;
-    background-color: #184f69;
-    border-radius: 0px;
+    min-height: 58px;
+    padding: 0 30px;
+    background-color: #37a1a5;
+    border: 2px solid #37a1a5;
+    border-radius: 6px;
 }
 .btn.btn-brand-2:hover {
-    background-color: #37a1a5;
+    background-color: #184f69;
+    border-color: #184f69;
     color: #fff;
 }
 .btn.btn-brand-2:hover * {
@@ -1118,18 +1132,36 @@ body {
     color: #fff;
 }
 .btn.btn-link-medium {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
     font-size: 15px;
-    line-height: 15px;
-    font-weight: 500;
+    line-height: 1;
+    font-weight: 800;
     color: #184f69;
-    padding: 18px 26px 18px 0px;
+    min-height: 58px;
+    padding: 0 30px;
+    border: 2px solid #184f69;
+    border-radius: 6px;
+    background: transparent;
 }
 .btn.btn-link-medium svg {
+    width: 18px;
+    height: 18px;
+    flex: 0 0 18px;
     color: #184f69;
     transition-duration: 0.2s;
 }
 .btn.btn-link-medium:hover svg {
-    transform: rotate(-45deg);
+    transform: translateX(3px);
+}
+.btn.btn-link-medium:hover {
+    color: #fff;
+    background: #184f69;
+}
+.btn.btn-link-medium:hover svg {
+    color: #fff;
 }
 .btn.btn-link-semibold {
     font-size: 14px;
@@ -1168,9 +1200,53 @@ body {
 }
 .btn.btn-link-white {
     color: #fff;
+    border-color: rgba(255, 255, 255, 0.85);
 }
 .btn.btn-link-white svg {
     color: #fff;
+}
+.btn.btn-link-white:hover {
+    background: #37a1a5;
+    border-color: #37a1a5;
+}
+a.about-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    min-height: 58px;
+    padding: 0 30px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 800;
+    line-height: 1;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+    white-space: nowrap;
+}
+a.about-cta.primary {
+    background: #37a1a5;
+    border: 2px solid #37a1a5;
+}
+a.about-cta.secondary {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.82);
+}
+a.about-cta:hover {
+    color: #fff;
+    transform: translateY(-2px);
+}
+a.about-cta.primary:hover,
+a.about-cta.secondary:hover {
+    background: #37a1a5;
+    border-color: #37a1a5;
+}
+a.about-cta svg {
+    width: 18px;
+    height: 18px;
+    flex: 0 0 18px;
+    display: block;
 }
 .btn.btn-default {
     background-color: #e8e9ed;
