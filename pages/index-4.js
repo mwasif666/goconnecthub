@@ -2,7 +2,6 @@ import Layout from "@/components/layout/Layout"
 import Brands1 from "@/components/sections/homepage1/Brands1"
 import News2 from "@/components/sections/homepage2/News2"
 import Newsletter1 from "@/components/sections/homepage2/Newsletter1"
-import Pricing2 from "@/components/sections/homepage2/Pricing2"
 import Requestquote2 from "@/components/sections/homepage2/Requestquote2"
 import Info6 from "@/components/sections/homepage3/Info6"
 import Hero4 from "@/components/sections/homepage4/Hero4"
@@ -27,7 +26,6 @@ export default function Home4() {
                 <Requestquote2 />
                 <Whychooseus3 />
                 <Brands1 />
-                <Pricing2 />
                 <News2 />
                 <Newsletter1 />
             </Layout>

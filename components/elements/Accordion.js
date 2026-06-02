@@ -23,71 +23,50 @@ export default function Accordion() {
             <div className="accordion" id="accordionFAQ">
                 <div className="accordion-item wow animate__animated animate__fadeIn">
                     <h5 className="accordion-header" onClick={() => handleToggle(1)}>
-                        <button className={isActive.key == 1 ? "accordion-button text-heading-5 " : "accordion-button text-heading-5 collapsed"}>How can I return an item
-                            purchased online?</button>
+                        <button className={isActive.key == 1 ? "accordion-button text-heading-5 " : "accordion-button text-heading-5 collapsed"}>How quickly can I get a quote?</button>
                     </h5>
                     <div className={isActive.key == 1 ? "accordion-collapse" : "accordion-collapse collapse"}>
-                        <div className="accordion-body">Contrary to popular belief, Lorem Ipsum is not
-                            simply random text. It has roots in a piece of classical Latin literature Id
-                            pro doctus mediocrem erroribus, diam nostro sed cu. Ea pri graeco tritani
-                            partiendo. Omittantur No tale choro fastidii his, pri cu epicuri perpetua.
-                            Enim dictas omittantur et duo, vocent lucilius quaestio mea ex. Ex illum
-                            officiis id.</div>
+                        <div className="accordion-body">You can receive a quote within minutes by filling out our online quote form. For more complex or large-scale shipments, our dedicated team will get back to you within 24 hours with a tailored solution that meets your needs.</div>
                     </div>
                 </div>
                 <div className="accordion-item wow animate__animated animate__fadeIn">
                     <h5 className="accordion-header" onClick={() => handleToggle(2)}>
-                        <button className={isActive.key == 2 ? "accordion-button text-heading-5 " : "accordion-button text-heading-5 collapsed"}>Can I cancel or change
-                            my order?</button>
+                        <button className={isActive.key == 2 ? "accordion-button text-heading-5 " : "accordion-button text-heading-5 collapsed"}>What information do I need to provide for a quote?</button>
                     </h5>
                     <div className={isActive.key == 2 ? "accordion-collapse" : "accordion-collapse collapse"}>
-                        <div className="accordion-body">Aut architecto consequatur sit error nemo sed
-                            dolorum suscipit 33 impedit dignissimos ut velit blanditiis qui quos magni
-                            id dolore dignissimos. Sit ipsa consectetur et sint harum et dicta
-                            consequuntur id cupiditate perferendis qui quisquam enim. Vel autem illo id
-                            error excepturi est dolorum voluptas qui maxime consequatur et culpa
-                            quibusdam in iusto vero sit amet Quis.</div>
+                        <div className="accordion-body">To generate an accurate quote, please provide the pickup and delivery locations, the type and nature of goods, total weight and dimensions of your shipment, and your preferred delivery timeline. The more detail you provide, the more precise your quote will be.</div>
                     </div>
                 </div>
                 <div className="accordion-item wow animate__animated animate__fadeIn">
                     <h5 className="accordion-header" onClick={() => handleToggle(3)}>
-                        <button className={isActive.key == 3 ? "accordion-button text-heading-5 " : "accordion-button text-heading-5 collapsed"}>I have promotional or
-                            discount code?</button>
+                        <button className={isActive.key == 3 ? "accordion-button text-heading-5 " : "accordion-button text-heading-5 collapsed"}>Do you handle international shipping?</button>
                     </h5>
                     <div className={isActive.key == 3 ? "accordion-collapse" : "accordion-collapse collapse"}>
-                        <div className="accordion-body">Eos nostrum aperiam ab enim quas sit voluptate fuga.
-                            Ea aperiam voluptas a accusantium similique 33 alias sapiente non vitae
-                            repellat et dolorum omnis eos beatae praesentium id sunt corporis. Aut nisi
-                            blanditiis aut corrupti quae et accusantium doloribus sed tempore libero a
-                            dolorum beatae.</div>
+                        <div className="accordion-body">Yes, we offer comprehensive international shipping services worldwide. Our experienced team handles all customs documentation, import/export regulations, and compliance requirements, ensuring your goods reach their destination smoothly and on time.</div>
                     </div>
                 </div>
                 <div className="accordion-item wow animate__animated animate__fadeIn">
                     <h5 className="accordion-header" onClick={() => handleToggle(4)}>
-                        <button className={isActive.key == 4 ? "accordion-button text-heading-5 " : "accordion-button text-heading-5 collapsed"}>What are the delivery
-                            types you use?</button>
+                        <button className={isActive.key == 4 ? "accordion-button text-heading-5 " : "accordion-button text-heading-5 collapsed"}>Can I track my inventory in real-time?</button>
                     </h5>
                     <div className={isActive.key == 4 ? "accordion-collapse" : "accordion-collapse collapse"}>
-                        <div className="accordion-body">Et beatae quae ex minima porro aut nihil quia sed
-                            optio dignissimos et voluptates deleniti et nesciunt veritatis et suscipit
-                            quod. Est sint voluptate id unde nesciunt non deleniti debitis. Ut dolores
-                            tempore vel placeat nemo quo enim reprehenderit eos corrupti maiores et
-                            minima quaerat. Quo sequi eaque eum similique sint et autem perspiciatis cum
-                            Quis exercitationem quo quos excepturi non ducimus ducimus eos natus velit.
-                        </div>
+                        <div className="accordion-body">Absolutely. Our advanced platform provides real-time inventory and shipment tracking around the clock. You can monitor stock levels, shipment status, and delivery updates 24/7 through our secure online portal, giving you full visibility at every stage.</div>
                     </div>
                 </div>
                 <div className="accordion-item wow animate__animated animate__fadeIn">
                     <h5 className="accordion-header" onClick={() => handleToggle(5)}>
-                        <button className={isActive.key == 5 ? "accordion-button text-heading-5 " : "accordion-button text-heading-5 collapsed"}>How can I pay for my
-                            purchases?</button>
+                        <button className={isActive.key == 5 ? "accordion-button text-heading-5 " : "accordion-button text-heading-5 collapsed"}>What happens if there's an issue with my order?</button>
                     </h5>
                     <div className={isActive.key == 5 ? "accordion-collapse" : "accordion-collapse collapse"}>
-                        <div className="accordion-body">Qui quas itaque ut molestias culpa vel culpa
-                            voluptas eos fugit sint ex veritatis totam cum unde maxime! Qui eius fugiat
-                            qui veritatis cumque a nesciunt nemo. Id numquam rerum est molestiae quia ut
-                            nisi architecto a officiis itaque eum quod repellat ut dolorem dolorem aut
-                            ipsam ipsa.</div>
+                        <div className="accordion-body">Our 24/7 customer support team is always on hand to resolve any issues as quickly as possible. As soon as a problem is reported, we initiate an immediate investigation, keep you informed throughout the process, and work to find the best resolution for your situation.</div>
+                    </div>
+                </div>
+                <div className="accordion-item wow animate__animated animate__fadeIn">
+                    <h5 className="accordion-header" onClick={() => handleToggle(6)}>
+                        <button className={isActive.key == 6 ? "accordion-button text-heading-5 " : "accordion-button text-heading-5 collapsed"}>How do I get started?</button>
+                    </h5>
+                    <div className={isActive.key == 6 ? "accordion-collapse" : "accordion-collapse collapse"}>
+                        <div className="accordion-body">Getting started is simple. Just contact us through our website or fill out the quote form, and one of our team members will reach out to discuss your requirements, walk you through our services, and set up your account so you can start shipping with confidence right away.</div>
                     </div>
                 </div>
             </div>

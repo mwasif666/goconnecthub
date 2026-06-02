@@ -2156,22 +2156,29 @@ a.about-cta svg {
 
 .cardService {
     position: relative;
+    margin-bottom: 42px;
 }
 .cardService .cardImage {
     position: relative;
+    height: 380px;
+    overflow: hidden;
 }
 .cardService .cardImage img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 .cardService .cardInfo {
     position: absolute;
-    bottom: -20px;
-    left: 18px;
-    right: 40px;
+    bottom: -12px;
+    left: 16px;
+    right: 16px;
     padding: 20px;
     background-color: #ffffff;
-    box-shadow: 0px 10px 42px rgba(1, 9, 20, 0.06);
+    box-shadow: 0px 10px 42px rgba(1, 9, 20, 0.12);
     justify-content: space-between;
+    border-radius: 8px;
 }
 .cardService .cardInfo img {
     max-height: 34px;
@@ -2184,7 +2191,7 @@ a.about-cta svg {
     background-color: #184f69;
 }
 .cardService .cardInfo:hover .color-brand-2 {
-    color: #37a1a5 !important;
+    color: #fff !important;
 }
 .cardService .cardInfo:hover .color-grey-900 {
     color: #fff !important;

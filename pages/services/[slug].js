@@ -230,17 +230,16 @@ export default function ServiceDetail({ service, relatedServices }) {
                     position: absolute;
                     inset: 0;
                     background-size: cover;
-                    background-position: center;
-                    transform: scale(1.04);
+                    background-position: center center;
+                    background-repeat: no-repeat;
                 }
                 .svc-hero-overlay {
                     position: absolute;
                     inset: 0;
                     background: linear-gradient(
-                        110deg,
-                        rgba(14, 51, 71, 0.92) 0%,
-                        rgba(14, 51, 71, 0.78) 55%,
-                        rgba(55, 161, 165, 0.45) 100%
+                        180deg,
+                        rgba(14, 51, 71, 0.70) 0%,
+                        rgba(14, 51, 71, 0.60) 100%
                     );
                 }
                 .svc-hero-inner {
@@ -248,7 +247,9 @@ export default function ServiceDetail({ service, relatedServices }) {
                     z-index: 2;
                     padding-top: 100px;
                     padding-bottom: 80px;
-                    max-width: 760px;
+                    max-width: 860px;
+                    margin: 0 auto;
+                    text-align: center;
                 }
                 .svc-eyebrow {
                     display: inline-block;
@@ -262,6 +263,11 @@ export default function ServiceDetail({ service, relatedServices }) {
                     letter-spacing: 0.1em;
                     text-transform: uppercase;
                     margin-bottom: 20px;
+                    display: block;
+                    width: fit-content;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-bottom: 20px;
                 }
                 .svc-hero-title {
                     color: #ffffff;
@@ -271,17 +277,18 @@ export default function ServiceDetail({ service, relatedServices }) {
                     margin: 0 0 20px;
                 }
                 .svc-hero-desc {
-                    color: rgba(255, 255, 255, 0.82);
+                    color: rgba(255, 255, 255, 0.90);
                     font-size: 18px;
                     line-height: 1.6;
-                    max-width: 580px;
-                    margin-bottom: 36px;
+                    max-width: 620px;
+                    margin: 0 auto 36px;
                 }
                 .svc-hero-btns {
                     display: flex;
                     flex-wrap: wrap;
                     gap: 16px;
                     align-items: center;
+                    justify-content: center;
                 }
                 /* ── STATS BAR ── */
                 .svc-stats-bar {

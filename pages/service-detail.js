@@ -1,12 +1,17 @@
-export default function ServiceDetailRedirect() {
-    return null;
-}
+import ServiceDetail from "./services/[slug]";
+import { getServiceBySlug, services } from "@/util/servicesData";
 
-export function getServerSideProps() {
+export default ServiceDetail;
+
+export function getStaticProps() {
+    const slug = "warehousing-storage";
+
     return {
-        redirect: {
-            destination: "/services/warehousing-storage",
-            permanent: true,
+        props: {
+            service: getServiceBySlug(slug),
+            relatedServices: services
+                .filter((item) => item.slug !== slug)
+                .slice(0, 3),
         },
     };
 }

@@ -34,7 +34,7 @@ export default function Service() {
                     <div className="container">
                         <div className="row">
                             {services.map((service, index) => (
-                                <div className={`${index < 4 ? "col-xl-3" : "col-xl-4"} col-md-6 mb-50 wow animate__animated animate__fadeIn`} key={service.slug}>
+                                <div className="col-xl-4 col-md-6 mb-30 wow animate__animated animate__fadeIn" key={service.slug}>
                                     <div className="cardService">
                                         <div className="cardImage">
                                             <Link href={`/services/${service.slug}`}>
