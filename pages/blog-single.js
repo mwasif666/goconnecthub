@@ -181,7 +181,7 @@ export default function BlogSingle() {
                                                 </div>
                                                 <div className="cardInfo">
                                                     <h6 className="font-sm-bold color-grey-900">Address</h6>
-                                                    <p className="font-sm color-grey-900">65 Allerton Street 901 N Pitt Str, USA</p>
+                                                    <p className="font-sm color-grey-900">2 Peel Lane Greater, Cheetham Hill, Manchester M8 8RJ</p>
                                                 </div>
                                             </li>
                                             <li className="wow animate__animated animate__fadeIn">
@@ -192,7 +192,7 @@ export default function BlogSingle() {
                                                 </div>
                                                 <div className="cardInfo">
                                                     <h6 className="font-sm-bold color-grey-900">Email</h6>
-                                                    <p className="font-sm color-grey-900">contact@transp.com</p>
+                                                    <p className="font-sm color-grey-900">sales@goconnecthub.uk</p>
                                                 </div>
                                             </li>
                                             <li className="wow animate__animated animate__fadeIn">
@@ -203,7 +203,7 @@ export default function BlogSingle() {
                                                 </div>
                                                 <div className="cardInfo">
                                                     <h6 className="font-sm-bold color-grey-900">Telephone</h6>
-                                                    <p className="font-sm color-grey-900">(+380) 50 318 47 07 - (+182) 50 318 47 07</p>
+                                                    <p className="font-sm color-grey-900">+44 7404 307411</p>
                                                 </div>
                                             </li>
                                         </ul>

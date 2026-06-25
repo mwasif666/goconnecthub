@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { services } from "@/util/servicesData";
+import { companyInfo } from "@/util/companyInfo";
 
 export default function Footer1() {
     return (
@@ -12,7 +13,10 @@ export default function Footer1() {
                                 <div className="mb-20"><img src="/logo.png" alt="Go Connect Hub" style={{ height: "45px", width: "auto" }} /></div>
                                 <p className="font-xs mb-20 color-white">Go Connect Hub helps ecommerce sellers manage storage, prep, pick and pack, dispatch, returns, and value-added fulfilment support with organized warehouse workflows.</p>
                                 <h6 className="color-brand-1">Follow Us</h6>
-                                <div className="mt-15"><Link className="icon-socials icon-facebook" href="#" /><Link className="icon-socials icon-instagram" href="#" /><Link className="icon-socials icon-twitter" href="#" /><Link className="icon-socials icon-youtube" href="#" /><Link className="icon-socials icon-skype" href="#" /></div>
+                                <div className="mt-15">
+                                    <Link className="icon-socials icon-facebook" href={companyInfo.socials.facebook} target="_blank" rel="noopener noreferrer" aria-label="Facebook" />
+                                    <Link className="icon-socials icon-instagram" href={companyInfo.socials.instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram" />
+                                </div>
                             </div>
                             <div className="col-lg-3 width-16 mb-30">
                                 <h5 className="mb-10 color-brand-1">Company</h5>
@@ -41,14 +45,12 @@ export default function Footer1() {
                                 </ul>
                             </div>
                             <div className="col-lg-3 width-20 mb-30">
-                                <h5 className="mb-10 color-brand-1">Gallery</h5>
-                                <div className="galleries-footer">
-                                    <ul className="list-imgs">
-                                        {Array.from({ length: 9 }, (_, index) => (
-                                            <li key={index}><img src={`/assets/imgs/page/homepage1/gal${index + 1}.png`} alt="Go Connect Hub fulfilment" /></li>
-                                        ))}
-                                    </ul>
-                                </div>
+                                <h5 className="mb-10 color-brand-1">Contact</h5>
+                                <ul className="menu-footer">
+                                    <li><Link href={`tel:${companyInfo.phone}`}>{companyInfo.phoneDisplay}</Link></li>
+                                    <li><Link href={`mailto:${companyInfo.email}`}>{companyInfo.email}</Link></li>
+                                    <li><span>{companyInfo.address}</span></li>
+                                </ul>
                             </div>
                         </div>
                     </div>

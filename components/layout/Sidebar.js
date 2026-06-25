@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { services } from "@/util/servicesData";
+import { companyInfo } from "@/util/companyInfo";
 
 export default function Sidebar({ openClass, handleMobileMenuClose }) {
     const [isActive, setIsActive] = useState({
@@ -54,7 +55,12 @@ export default function Sidebar({ openClass, handleMobileMenuClose }) {
                                 <div className="box-download-app">
                                     <p className="font-xs color-grey-900 mb-25">Go Connect Hub fulfilment support for sellers and growing brands.</p>
                                     <div className="mb-25">
-                                        <div className="d-flex"><Link className="mr-10" href="#"><img src="/assets/imgs/template/appstore-btn.png" alt="Go Connect Hub" /></Link><Link href="#"><img src="/assets/imgs/template/google-play-btn.png" alt="Go Connect Hub" /></Link>
+                                        <p className="font-xs color-grey-900 mb-10">{companyInfo.address}</p>
+                                        <p className="font-xs color-grey-900 mb-10"><Link href={`tel:${companyInfo.phone}`}>{companyInfo.phoneDisplay}</Link></p>
+                                        <p className="font-xs color-grey-900 mb-10"><Link href={`mailto:${companyInfo.email}`}>{companyInfo.email}</Link></p>
+                                        <div className="d-flex">
+                                            <Link className="mr-10 font-xs color-brand-2" href={companyInfo.socials.facebook} target="_blank" rel="noopener noreferrer">Facebook</Link>
+                                            <Link className="font-xs color-brand-2" href={companyInfo.socials.instagram} target="_blank" rel="noopener noreferrer">Instagram</Link>
                                         </div>
                                     </div>
                                 </div>

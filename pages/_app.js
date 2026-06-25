@@ -1,4 +1,5 @@
 import Preloader from "@/components/elements/Preloader";
+import GlobalFormHandler from "@/components/forms/GlobalFormHandler";
 import { useEffect, useState } from "react";
 import "@/public/assets/css/vendors/normalize.css";
 import "@/public/assets/css/vendors/bootstrap.min.css";
@@ -30,6 +31,7 @@ function MyApp({ Component, pageProps }) {
                     overflow-x: hidden;
                 }
             `}</style>
+            <GlobalFormHandler />
             {!loading ? <Component {...pageProps} /> : <Preloader />}
         </>
     );

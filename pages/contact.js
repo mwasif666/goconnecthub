@@ -1,8 +1,21 @@
 import Layout from "@/components/layout/Layout";
+import useContactForm, {
+    CONTACT_FORM_ACTION,
+    CONTACT_FORM_EMAIL_TO,
+} from "@/components/forms/useContactForm";
 import { services } from "@/util/servicesData";
+import { companyInfo } from "@/util/companyInfo";
 import Link from "next/link";
 
 export default function Contact() {
+    const {
+        formRef,
+        handleSubmit,
+        isSubmitting,
+        toastMessage,
+        isToastVisible,
+    } = useContactForm();
+
     return (
         <Layout>
             <main className="contact-page">
@@ -27,22 +40,38 @@ export default function Contact() {
                 <section className="contact-main">
                     <div className="container">
                         <div className="contact-grid">
-                            <form className="contact-form" action="#">
+                            <form
+                                ref={formRef}
+                                className="contact-form"
+                                method="post"
+                                action={CONTACT_FORM_ACTION}
+                                data-contact-managed="true"
+                                onSubmit={handleSubmit}
+                            >
+                                <input type="hidden" name="email_to" value={CONTACT_FORM_EMAIL_TO} />
+                                <input type="hidden" name="subject" value="Contact Inquiry" />
                                 <span className="kicker">Send your details</span>
                                 <h2>Get in touch</h2>
                                 <div className="form-grid">
-                                    <input type="text" placeholder="Your name *" />
-                                    <input type="email" placeholder="Your email *" />
-                                    <input type="tel" placeholder="Phone number" />
-                                    <select defaultValue="">
+                                    <input type="text" name="name" placeholder="Your name *" required />
+                                    <input type="email" name="email" placeholder="Your email *" required />
+                                    <input type="tel" name="phone" placeholder="Phone number" />
+                                    <select name="service" defaultValue="">
                                         <option value="" disabled>Select service</option>
                                         {services.map((service) => (
                                             <option value={service.title} key={service.slug}>{service.title}</option>
                                         ))}
                                     </select>
-                                    <textarea placeholder="Message / fulfilment requirement" rows={7} />
+                                    <textarea name="message" placeholder="Message / fulfilment requirement" rows={7} />
                                 </div>
-                                <button type="submit">Submit inquiry</button>
+                                <button type="submit" disabled={isSubmitting}>
+                                    {isSubmitting ? "Sending..." : "Submit inquiry"}
+                                </button>
+                                {isToastVisible && (
+                                    <p className="contact-status" role="status" aria-live="polite">
+                                        {toastMessage}
+                                    </p>
+                                )}
                             </form>
 
                             <aside className="contact-info">
@@ -53,11 +82,20 @@ export default function Contact() {
                                 </div>
                                 <div className="info-card">
                                     <span>Email</span>
-                                    <Link href="mailto:hello@goconnecthub.com">hello@goconnecthub.com</Link>
+                                    <Link href={`mailto:${companyInfo.email}`}>{companyInfo.email}</Link>
                                 </div>
                                 <div className="info-card">
                                     <span>Phone</span>
-                                    <Link href="tel:+01246357">+01-246-357</Link>
+                                    <Link href={`tel:${companyInfo.phone}`}>{companyInfo.phoneDisplay}</Link>
+                                </div>
+                                <div className="info-card">
+                                    <span>Address</span>
+                                    <p>{companyInfo.address}</p>
+                                </div>
+                                <div className="info-card social-card">
+                                    <span>Social</span>
+                                    <Link href={companyInfo.socials.facebook} target="_blank" rel="noopener noreferrer">Facebook</Link>
+                                    <Link href={companyInfo.socials.instagram} target="_blank" rel="noopener noreferrer">Instagram</Link>
                                 </div>
                                 <div className="info-card">
                                     <span>Hours</span>
@@ -198,6 +236,17 @@ export default function Contact() {
                     cursor: pointer;
                 }
 
+                button:disabled {
+                    cursor: not-allowed;
+                    opacity: 0.72;
+                }
+
+                .contact-status {
+                    color: #12715b;
+                    font-weight: 800;
+                    margin: 14px 0 0;
+                }
+
                 .contact-info {
                     display: grid;
                     gap: 18px;
@@ -230,6 +279,10 @@ export default function Contact() {
                     line-height: 1.5;
                     margin: 0;
                     font-weight: 800;
+                }
+
+                .social-card a + a {
+                    margin-top: 8px;
                 }
 
                 .info-card.primary p {

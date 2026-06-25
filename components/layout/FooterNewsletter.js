@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { companyInfo } from "@/util/companyInfo";
 
 export default function FooterNewsletter() {
     return (
@@ -15,7 +16,10 @@ export default function FooterNewsletter() {
                                     service to our customers including kitting, assembly, customized package and business
                                     inserts, etc.</p>
                                 <h6 className="font-sm color-brand-1">Follow Us</h6>
-                                <div className="mt-15"><Link className="icon-socials icon-facebook" href="#" /><Link className="icon-socials icon-instagram" href="#" /><Link className="icon-socials icon-twitter" href="#" /><Link className="icon-socials icon-youtube" href="#" /><Link className="icon-socials icon-skype" href="#" /></div>
+                                <div className="mt-15">
+                                    <Link className="icon-socials icon-facebook" href={companyInfo.socials.facebook} target="_blank" rel="noopener noreferrer" aria-label="Facebook" />
+                                    <Link className="icon-socials icon-instagram" href={companyInfo.socials.instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram" />
+                                </div>
                             </div>
                             <div className="col-sm-3 mb-30">
                                 <h6 className="mb-10 color-brand-1">Company</h6>
@@ -29,14 +33,11 @@ export default function FooterNewsletter() {
                                 </ul>
                             </div>
                             <div className="col-sm-3 mb-30">
-                                <h6 className="mb-10 color-brand-1">Services</h6>
+                                <h6 className="mb-10 color-brand-1">Contact</h6>
                                 <ul className="menu-footer">
-                                    <li><Link href="#">Air Freight</Link></li>
-                                    <li><Link href="#">Ocean Freight</Link></li>
-                                    <li><Link href="#">Railway Freight</Link></li>
-                                    <li><Link href="#">Warehousing</Link></li>
-                                    <li><Link href="#">Distribution</Link></li>
-                                    <li><Link href="#">Value added</Link></li>
+                                    <li><Link href={`tel:${companyInfo.phone}`}>{companyInfo.phoneDisplay}</Link></li>
+                                    <li><Link href={`mailto:${companyInfo.email}`}>{companyInfo.email}</Link></li>
+                                    <li><span>{companyInfo.address}</span></li>
                                 </ul>
                             </div>
                         </div>
@@ -46,8 +47,7 @@ export default function FooterNewsletter() {
                     <div className="container-sub">
                         <div className="footer-bottom">
                             <div className="row align-items-center">
-                                <div className="col-sm-5 text-center text-sm-start"><span className="color-grey-300 font-xs">©Transp
-                                    Official {new Date().getFullYear()}. All right reversed.</span></div>
+                                <div className="col-sm-5 text-center text-sm-start"><span className="color-grey-300 font-xs">Go Connect Hub {new Date().getFullYear()}. All rights reserved.</span></div>
                                 <div className="col-sm-7 text-center text-sm-end">
                                     <ul className="menu-bottom">
                                         <li><Link className="font-xs color-grey-300" href="/term-conditions">Privacy policy</Link>
