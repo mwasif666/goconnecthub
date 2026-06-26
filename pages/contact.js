@@ -94,8 +94,10 @@ export default function Contact() {
                                 </div>
                                 <div className="info-card social-card">
                                     <span>Social</span>
-                                    <Link href={companyInfo.socials.facebook} target="_blank" rel="noopener noreferrer">Facebook</Link>
-                                    <Link href={companyInfo.socials.instagram} target="_blank" rel="noopener noreferrer">Instagram</Link>
+                                    <div className="social-icons">
+                                        <Link className="icon-socials icon-facebook" href={companyInfo.socials.facebook} target="_blank" rel="noopener noreferrer" aria-label="Facebook" />
+                                        <Link className="icon-socials icon-instagram" href={companyInfo.socials.instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram" />
+                                    </div>
                                 </div>
                                 <div className="info-card">
                                     <span>Hours</span>
@@ -281,8 +283,33 @@ export default function Contact() {
                     font-weight: 800;
                 }
 
-                .social-card a + a {
+                .social-card .social-icons {
+                    display: flex;
+                    align-items: center;
+                    gap: 18px;
                     margin-top: 8px;
+                }
+
+                .social-card .social-icons :global(.icon-socials) {
+                    width: 22px;
+                    height: 22px;
+                    margin-right: 0;
+                    background: #37a1a5 !important;
+                    transition: opacity 0.2s ease;
+                }
+
+                .social-card .social-icons :global(.icon-socials:hover) {
+                    opacity: 0.7;
+                }
+
+                .social-card .social-icons :global(.icon-facebook) {
+                    -webkit-mask: url(/assets/imgs/template/icons/fb.svg) no-repeat center / contain;
+                    mask: url(/assets/imgs/template/icons/fb.svg) no-repeat center / contain;
+                }
+
+                .social-card .social-icons :global(.icon-instagram) {
+                    -webkit-mask: url(/assets/imgs/template/icons/inst.svg) no-repeat center / contain;
+                    mask: url(/assets/imgs/template/icons/inst.svg) no-repeat center / contain;
                 }
 
                 .info-card.primary p {

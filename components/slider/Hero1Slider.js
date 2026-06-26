@@ -71,7 +71,7 @@ export default function Hero1Slider() {
                                             </div>
                                         </div>
                                         <div className="box-button mt-30">
-                                            <Link className="btn btn-brand-1-big hover-up mr-40 wow animate__animated animate__fadeInUp" href="#">Get a Quote</Link>
+                                            <Link className="btn btn-brand-1-big hover-up mr-40 wow animate__animated animate__fadeInUp" href="/request-a-quote">Get a Quote</Link>
                                             <a className="btn btn-play popup-youtube hover-up wow animate__animated animate__fadeInUp" onClick={() => setOpen(true)}>
                                                 <img className="wow animate__animated animate__fadeInUp" src="/assets/imgs/template/icons/play.svg" alt="" />How it work
                                                 ?
