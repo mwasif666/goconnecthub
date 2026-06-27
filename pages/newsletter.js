@@ -566,16 +566,6 @@ export default function Newsletter() {
                                             <input className="form-control" type="text" placeholder="Delivery City" />
                                         </div>
                                     </div>
-                                    <div className="col-sm-6">
-                                        <div className="form-group">
-                                            <input className="form-control" type="text" placeholder="Weight" />
-                                        </div>
-                                    </div>
-                                    <div className="col-sm-6">
-                                        <div className="form-group">
-                                            <input className="form-control" type="text" placeholder="Height" />
-                                        </div>
-                                    </div>
                                     <div className="col-sm-12">
                                         <div className="form-group">
                                             <textarea className="form-control" name="message" rows={5} placeholder="Message / Note" defaultValue={""} />

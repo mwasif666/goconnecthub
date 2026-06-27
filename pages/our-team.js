@@ -358,8 +358,6 @@ export default function OurTeam() {
                             </div>
                             <div className="col-lg-6 mb-50">
                                 <div className="box-image-why box-image-why-info-8"><img className="wow animate__animated animate__fadeIn" src="/assets/imgs/page/homepage3/img-info-6.png" alt="transp" />
-                                    <div className="box-button-play"><a className="btn btn-play popup-youtube hover-up wow animate__animated animate__fadeIn" onClick={() => setOpen(true)}><img className="wow animate__animated animate__fadeIn" src="/assets/imgs/template/icons/play.svg" alt="transp" /><span className="color-white wow animate__animated animate__fadeIn">How it work ?<br />Watch video tour</span></a></div>
-                                    <ModalVideo channel='youtube' autoplay isOpen={isOpen} videoId="vfhzo499OeA" onClose={() => setOpen(false)} />
                                 </div>
                             </div>
                         </div>
@@ -385,14 +383,9 @@ export default function OurTeam() {
                                                         <input className="form-control" type="text" placeholder="Your email *" />
                                                     </div>
                                                 </div>
-                                                <div className="col-md-6">
+                                                <div className="col-md-12">
                                                     <div className="form-group">
-                                                        <input className="form-control" type="text" placeholder="Weight" />
-                                                    </div>
-                                                </div>
-                                                <div className="col-md-6">
-                                                    <div className="form-group">
-                                                        <input className="form-control" type="text" placeholder="Height" />
+                                                        <input className="form-control" type="tel" placeholder="Phone number" />
                                                     </div>
                                                 </div>
                                                 <div className="col-md-12">

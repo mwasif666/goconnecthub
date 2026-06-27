@@ -44,24 +44,6 @@ const results = [
     { label: "Market Standard", value: "82%", height: 66 },
 ];
 
-const team = [
-    {
-        name: "Operations Team",
-        role: "Warehouse & Dispatch",
-        image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
-    },
-    {
-        name: "Client Success",
-        role: "Account Management",
-        image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80",
-    },
-    {
-        name: "Tech & Systems",
-        role: "Inventory & Integrations",
-        image: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&w=400&q=80",
-    },
-];
-
 export default function About() {
     const resultsRef = useRef(null);
 
@@ -306,30 +288,6 @@ export default function About() {
                                     </div>
                                 ))}
                             </div>
-                        </div>
-                    </div>
-                </section>
-
-                {/* ── TEAM ── */}
-                <section className="team-section">
-                    <div className="container">
-                        <div className="team-header">
-                            <span className="section-tag">The people</span>
-                            <h2>Teams that keep your fulfilment running</h2>
-                            <p>Operations, client success, and systems — working together so your inventory stays organized and orders move on time.</p>
-                        </div>
-                        <div className="team-grid">
-                            {team.map((member, i) => (
-                                <div className="team-card wow animate__animated animate__fadeInUp" key={member.name} data-wow-delay={`${i * 0.1}s`}>
-                                    <div className="team-img">
-                                        <img src={member.image} alt={member.name} />
-                                    </div>
-                                    <div className="team-info">
-                                        <h4>{member.name}</h4>
-                                        <span>{member.role}</span>
-                                    </div>
-                                </div>
-                            ))}
                         </div>
                     </div>
                 </section>

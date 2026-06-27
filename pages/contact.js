@@ -3,7 +3,6 @@ import useContactForm, {
     CONTACT_FORM_ACTION,
     CONTACT_FORM_EMAIL_TO,
 } from "@/components/forms/useContactForm";
-import { services } from "@/util/servicesData";
 import { companyInfo } from "@/util/companyInfo";
 import Link from "next/link";
 
@@ -56,12 +55,6 @@ export default function Contact() {
                                     <input type="text" name="name" placeholder="Your name *" required />
                                     <input type="email" name="email" placeholder="Your email *" required />
                                     <input type="tel" name="phone" placeholder="Phone number" />
-                                    <select name="service" defaultValue="">
-                                        <option value="" disabled>Select service</option>
-                                        {services.map((service) => (
-                                            <option value={service.title} key={service.slug}>{service.title}</option>
-                                        ))}
-                                    </select>
                                     <textarea name="message" placeholder="Message / fulfilment requirement" rows={7} />
                                 </div>
                                 <button type="submit" disabled={isSubmitting}>

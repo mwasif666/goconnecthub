@@ -206,14 +206,9 @@ export default function Faq() {
                                                         <input className="form-control" type="text" placeholder="Your email *" />
                                                     </div>
                                                 </div>
-                                                <div className="col-md-6">
+                                                <div className="col-md-12">
                                                     <div className="form-group">
-                                                        <input className="form-control" type="text" placeholder="Weight" />
-                                                    </div>
-                                                </div>
-                                                <div className="col-md-6">
-                                                    <div className="form-group">
-                                                        <input className="form-control" type="text" placeholder="Height" />
+                                                        <input className="form-control" type="tel" placeholder="Phone number" />
                                                     </div>
                                                 </div>
                                                 <div className="col-md-12">

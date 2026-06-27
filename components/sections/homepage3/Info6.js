@@ -9,9 +9,7 @@ export default function Info6() {
                     <div className="row align-items-center">
                         <div className="col-lg-6 mb-50">
                             <div className="box-image-why wow animate__animated animate__fadeIn"><img src="/assets/imgs/page/homepage3/img-info-6.png" alt="transp" />
-                                <div className="box-button-play wow animate__animated animate__fadeIn"><a className="btn btn-play popup-youtube hover-up" onClick={() => setOpen(true)}><img src="/assets/imgs/template/icons/play.svg" alt="transp" /><span className="color-white">How it work ?<br />Watch video tour</span></a></div>
                             </div>
-                            <ModalVideo channel='youtube' autoplay isOpen={isOpen} videoId="vfhzo499OeA" onClose={() => setOpen(false)} />
                         </div>
                         <div className="col-lg-6 mb-50">
                             <div className="box-info-6"><span className="btn btn-tag wow animate__animated animate__fadeIn">Who We

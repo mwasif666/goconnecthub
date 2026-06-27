@@ -50,16 +50,6 @@ export default function Requestquote3() {
                                                 <input className="form-control" type="text" placeholder="Delivery City" />
                                             </div>
                                         </div>
-                                        <div className="col-lg-6">
-                                            <div className="form-group">
-                                                <input className="form-control" type="text" placeholder="Weight" />
-                                            </div>
-                                        </div>
-                                        <div className="col-lg-6">
-                                            <div className="form-group">
-                                                <input className="form-control" type="text" placeholder="Height" />
-                                            </div>
-                                        </div>
                                         <div className="col-lg-12">
                                             <div className="form-group">
                                                 <textarea className="form-control" name="message" rows={5} placeholder="Message / Note" defaultValue={""} />

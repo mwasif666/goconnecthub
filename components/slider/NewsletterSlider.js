@@ -29,7 +29,6 @@ export default function NewsletterSlider() {
                                 <div className="col-sm-8">
                                     <p className="font-xs color-white mb-15">Logistics &amp; Transportation</p>
                                     <h4 className="color-white mb-25">Digital &amp; Trusted Transport Logistic Company</h4>
-                                    <div className="box-button mt-30"><a className="btn btn-play popup-youtube hover-up" onClick={() => setOpen(true)}><img src="/assets/imgs/template/icons/play.svg" alt="" />How it work ?</a></div>
 
                                 </div>
                                 <ModalVideo channel='youtube' autoplay isOpen={isOpen} videoId="vfhzo499OeA" onClose={() => setOpen(false)} />
@@ -44,7 +43,6 @@ export default function NewsletterSlider() {
                                 <div className="col-sm-8">
                                     <p className="font-xs color-white mb-15">Logistics &amp; Transportation</p>
                                     <h4 className="color-white mb-25">Digital &amp; Trusted Transport Logistic Company</h4>
-                                    <div className="box-button mt-30"><a className="btn btn-play popup-youtube hover-up" onClick={() => setOpen(true)}><img src="/assets/imgs/template/icons/play.svg" alt="" />How it work ?</a></div>
 
                                 </div>
                                 <ModalVideo channel='youtube' autoplay isOpen={isOpen} videoId="vfhzo499OeA" onClose={() => setOpen(false)} />

@@ -198,19 +198,9 @@ export default function Quote() {
                                                         <input className="form-control" type="email" name="email" data-label="Email" placeholder="Your email *" required />
                                                     </div>
                                                 </div>
-                                                <div className="col-md-6">
-                                                    <div className="form-group">
-                                                        <input className="form-control" type="tel" name="phone" data-label="Phone" placeholder="Phone number *" required />
-                                                    </div>
-                                                </div>
-                                                <div className="col-md-6">
-                                                    <div className="form-group">
-                                                        <input className="form-control" type="text" name="weight" data-label="Weight" placeholder="Weight (e.g. 12 kg)" />
-                                                    </div>
-                                                </div>
                                                 <div className="col-md-12">
                                                     <div className="form-group">
-                                                        <input className="form-control" type="text" name="dimensions" data-label="Dimensions" placeholder="Dimensions (L x W x H)" />
+                                                        <input className="form-control" type="tel" name="phone" data-label="Phone" placeholder="Phone number *" required />
                                                     </div>
                                                 </div>
                                                 <div className="col-md-12">

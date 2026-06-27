@@ -92,16 +92,6 @@ export default function Requestquote1() {
                                             </select>
                                         </div>
                                     </div>
-                                    <div className="col-lg-3">
-                                        <div className="form-group">
-                                            <input className="form-control" type="text" placeholder="Dimensions" />
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-3">
-                                        <div className="form-group">
-                                            <input className="form-control" type="text" placeholder="Weight" />
-                                        </div>
-                                    </div>
                                     <div className="col-lg-6">
                                         <div className="form-group">
                                             <select className="form-control">

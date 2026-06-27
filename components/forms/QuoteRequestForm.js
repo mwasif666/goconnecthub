@@ -65,18 +65,6 @@ export default function QuoteRequestForm() {
                                 </select>
                             </div>
                         </div>
-                        <div className="col-lg-3">
-                            <div className="form-group">
-                                <label className="quote-label" htmlFor="quote-weight">Weight</label>
-                                <input id="quote-weight" className="form-control" type="text" name="weight" data-label="Weight" placeholder="e.g. 12 kg" />
-                            </div>
-                        </div>
-                        <div className="col-lg-3">
-                            <div className="form-group">
-                                <label className="quote-label" htmlFor="quote-dimensions">Dimensions</label>
-                                <input id="quote-dimensions" className="form-control" type="text" name="dimensions" data-label="Dimensions" placeholder="L x W x H" />
-                            </div>
-                        </div>
                         <div className="col-lg-6">
                             <div className="form-group">
                                 <label className="quote-label" htmlFor="quote-pickup">Pickup / stock location</label>
