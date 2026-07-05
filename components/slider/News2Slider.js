@@ -49,7 +49,7 @@ export default function News2Slider() {
                 <SwiperSlide className="wow animate__animated animate__fadeIn">
                     <div className="card-blog-grid hover-up">
                         <div className="card-image">
-                            <Link href="/blog-single">
+                            <Link href="/blog">
                                 <img src="/assets/imgs/page/homepage2/news1.png" alt="transp" />
                             </Link>
                             <Link className="btn btn-border-brand-1 mr-15" href="/blog">
@@ -57,7 +57,7 @@ export default function News2Slider() {
                             </Link>
                         </div>
                         <div className="card-info">
-                            <Link href="/blog-single">
+                            <Link href="/blog">
                                 <h5 className="color-brand-2">How to find reliable logistics company in China and Asia</h5>
                             </Link>
                             <p className="font-sm color-grey-500 mt-20">Fusce dictum ullamcorper dui, id dignissim arcu volutpat vitae. Aenean mattis vestibulum odio eu facilisis. Aenean quam arcu, blandit at aliquet sit amet, convallis nec risus.</p>
@@ -79,7 +79,7 @@ export default function News2Slider() {
                 <SwiperSlide className="wow animate__animated animate__fadeIn">
                     <div className="card-blog-grid hover-up">
                         <div className="card-image">
-                            <Link href="/blog-single">
+                            <Link href="/blog">
                                 <img src="/assets/imgs/page/homepage2/news2.png" alt="transp" />
                             </Link>
                             <Link className="btn btn-border-brand-1 mr-15" href="/blog">
@@ -87,7 +87,7 @@ export default function News2Slider() {
                             </Link>
                         </div>
                         <div className="card-info">
-                            <Link href="/blog-single">
+                            <Link href="/blog">
                                 <h5 className="color-brand-2">How to find reliable logistics company in China and Asia</h5>
                             </Link>
                             <p className="font-sm color-grey-500 mt-20">Fusce dictum ullamcorper dui, id dignissim arcu volutpat vitae. Aenean mattis vestibulum odio eu facilisis. Aenean quam arcu, blandit at aliquet sit amet, convallis nec risus.</p>
@@ -109,7 +109,7 @@ export default function News2Slider() {
                 <SwiperSlide className="wow animate__animated animate__fadeIn">
                     <div className="card-blog-grid hover-up">
                         <div className="card-image">
-                            <Link href="/blog-single">
+                            <Link href="/blog">
                                 <img src="/assets/imgs/page/homepage2/news3.png" alt="transp" />
                             </Link>
                             <Link className="btn btn-border-brand-1 mr-15" href="/blog">
@@ -117,7 +117,7 @@ export default function News2Slider() {
                             </Link>
                         </div>
                         <div className="card-info">
-                            <Link href="/blog-single">
+                            <Link href="/blog">
                                 <h5 className="color-brand-2">How to find reliable logistics company in China and Asia</h5>
                             </Link>
                             <p className="font-sm color-grey-500 mt-20">Fusce dictum ullamcorper dui, id dignissim arcu volutpat vitae. Aenean mattis vestibulum odio eu facilisis. Aenean quam arcu, blandit at aliquet sit amet, convallis nec risus.</p>
@@ -139,7 +139,7 @@ export default function News2Slider() {
                 <SwiperSlide className="wow animate__animated animate__fadeIn">
                     <div className="card-blog-grid hover-up">
                         <div className="card-image">
-                            <Link href="/blog-single">
+                            <Link href="/blog">
                                 <img src="/assets/imgs/page/homepage2/news2.png" alt="transp" />
                             </Link>
                             <Link className="btn btn-border-brand-1 mr-15" href="/blog">
@@ -147,7 +147,7 @@ export default function News2Slider() {
                             </Link>
                         </div>
                         <div className="card-info">
-                            <Link href="/blog-single">
+                            <Link href="/blog">
                                 <h5 className="color-brand-2">How to find reliable logistics company in China and Asia</h5>
                             </Link>
                             <p className="font-sm color-grey-500 mt-20">Fusce dictum ullamcorper dui, id dignissim arcu volutpat vitae. Aenean mattis vestibulum odio eu facilisis. Aenean quam arcu, blandit at aliquet sit amet, convallis nec risus.</p>

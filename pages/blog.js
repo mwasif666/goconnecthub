@@ -1,17 +1,20 @@
 import Layout from "@/components/layout/Layout";
 import Brand1Slider from "@/components/slider/Brand1Slider";
 import Link from "next/link";
+import { blogPosts } from "@/util/blogData";
+import { companyInfo } from "@/util/companyInfo";
+
 export default function Blog() {
     return (
         <>
-            <Layout>
+            <Layout headTitle="Latest News & Blog">
                 <section className="section bg-2 position-relative">
                     <div className="container box-hero-blog position-relative">
                         <div className="row">
                             <div className="col-lg-6 col-md-7">
                                 <h6 className="color-brand-2 mb-15 wow animate__animated animate__fadeIn">Don’t miss the trending</h6>
                                 <h2 className="color-brand-2 mb-25 wow animate__animated animate__fadeIn">Latest News &amp; Blog</h2>
-                                <p className="font-md-color-grey-900 wow animate__animated animate__fadeIn">Share discoveries on the world of Logistic, find curiosities about cargo services, produce insights on how intelligent agents work.</p>
+                                <p className="font-md-color-grey-900 wow animate__animated animate__fadeIn">Practical insights from the Go Connect Hub team on fulfilment, warehousing, Amazon prep, and ecommerce operations.</p>
                             </div>
                         </div>
                         <div className="quote-blog shape-1" />
@@ -20,382 +23,37 @@ export default function Blog() {
                 </section>
                 <section className="section mt-85">
                     <div className="container">
-                        <div className="box-tags text-center">
-                            <Link className="btn btn-tags wow animate__animated animate__fadeIn" href="#">
-                                Logistics
-                            </Link>
-                            <Link className="btn btn-tags wow animate__animated animate__fadeIn" href="#">
-                                Cargo services
-                            </Link>
-                            <Link className="btn btn-tags wow animate__animated animate__fadeIn" href="#">
-                                Freight transportation
-                            </Link>
-                            <Link className="btn btn-tags wow animate__animated animate__fadeIn" href="#">
-                                Transport
-                            </Link>
-                            <Link className="btn btn-tags wow animate__animated animate__fadeIn" href="#">
-                                Air freight
-                            </Link>
-                            <Link className="btn btn-tags wow animate__animated animate__fadeIn" href="#">
-                                Ocean freight
-                            </Link>
-                            <Link className="btn btn-tags wow animate__animated animate__fadeIn" href="#">
-                                Reverse logistics
-                            </Link>
-                        </div>
-                        <div className="row mt-50">
-                            <div className="col-xxl-6 col-xl-12 col-lg-12 wow animate__animated animate__fadeIn">
-                                <div className="card-blog-grid card-blog-grid-2 hover-up">
-                                    <div className="card-image">
-                                        <Link href="/blog-single">
-                                            <img src="/assets/imgs/page/blog/img.png" alt="transp" />
-                                        </Link>
-                                        <Link className="btn btn-border-brand-1 mr-15" href="/blog">
-                                            Shipping
-                                        </Link>
-                                    </div>
-                                    <div className="card-info">
-                                        <Link href="/blog-single">
-                                            <h5 className="color-brand-2">How to find reliable logistics company in China and Asia</h5>
-                                        </Link>
-                                        <p className="font-sm color-grey-500 mt-20">Fusce dictum ullamcorper dui, id dignissim arcu volutpat vitae. Aenean mattis vestibulum odio eu facilisis. Aenean quam arcu, blandit at aliquet sit amet, convallis nec risus.</p>
-                                        <div className="line-border" />
-                                        <div className="mt-5 d-flex align-items-center justify-content-between pt-0">
-                                            <Link className="btn btn-link font-sm color-brand-2" href="#">
-                                                View Details
-                                                <span>
-                                                    <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                                                    </svg>
-                                                </span>
-                                            </Link>
-                                            <span className="date-post font-sm color-grey-700">29 May 2026</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-xxl-6 col-xl-12 col-lg-12 wow animate__animated animate__fadeIn">
-                                <div className="card-blog-grid card-blog-grid-2 hover-up">
-                                    <div className="card-image">
-                                        <Link href="/blog-single">
-                                            <img src="/assets/imgs/page/blog/img2.png" alt="transp" />
-                                        </Link>
-                                        <Link className="btn btn-border-brand-1 mr-15" href="/blog">
-                                            Shipping
-                                        </Link>
-                                    </div>
-                                    <div className="card-info">
-                                        <Link href="/blog-single">
-                                            <h5 className="color-brand-2">How to find reliable logistics company in China and Asia</h5>
-                                        </Link>
-                                        <p className="font-sm color-grey-500 mt-20">Fusce dictum ullamcorper dui, id dignissim arcu volutpat vitae. Aenean mattis vestibulum odio eu facilisis. Aenean quam arcu, blandit at aliquet sit amet, convallis nec risus.</p>
-                                        <div className="line-border" />
-                                        <div className="mt-5 d-flex align-items-center justify-content-between pt-0">
-                                            <Link className="btn btn-link font-sm color-brand-2" href="#">
-                                                View Details
-                                                <span>
-                                                    <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                                                    </svg>
-                                                </span>
-                                            </Link>
-                                            <span className="date-post font-sm color-grey-700">29 May 2026</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section className="section mt-50 position-relative">
-                    <div className="container">
-                        <div className="banner-786">
-                            <div className="box-banner-ads">
-                                <div className="box-banner-left">
-                                    <h6 className="color-brand-2 wow animate__animated animate__fadeIn">
-                                        Fast shipping with the
-                                        <br className="d-none d-lg-block" />
-                                        most modern technology
-                                    </h6>
-                                </div>
-                                <div className="box-banner-right" />
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section className="section mt-70">
-                    <div className="container">
                         <div className="row">
-                            <div className="col-lg-4 wow animate__animated animate__fadeIn">
-                                <div className="card-blog-grid hover-up">
-                                    <div className="card-image">
-                                        <Link href="/blog-single">
-                                            <img src="/assets/imgs/page/blog/news1.png" alt="transp" />
-                                        </Link>
-                                        <Link className="btn btn-border-brand-1 mr-15" href="/blog">
-                                            Shipping
-                                        </Link>
-                                    </div>
-                                    <div className="card-info">
-                                        <Link href="/blog-single">
-                                            <h5 className="color-brand-2">How to find reliable logistics company in China and Asia</h5>
-                                        </Link>
-                                        <p className="font-sm color-grey-500 mt-20">Fusce dictum ullamcorper dui, id dignissim arcu volutpat vitae. Aenean mattis vestibulum odio eu facilisis. Aenean quam arcu, blandit at aliquet sit amet, convallis nec risus.</p>
-                                        <div className="line-border" />
-                                        <div className="mt-5 d-flex align-items-center justify-content-between pt-0">
-                                            <Link className="btn btn-link font-sm color-brand-2" href="#">
-                                                View Details
-                                                <span>
-                                                    <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                                                    </svg>
-                                                </span>
+                            {blogPosts.map((post) => (
+                                <div className="col-lg-4 wow animate__animated animate__fadeIn" key={post.slug}>
+                                    <div className="card-blog-grid hover-up">
+                                        <div className="card-image">
+                                            <Link href={`/blog/${post.slug}`}>
+                                                <img src={post.image} alt={post.title} />
                                             </Link>
-                                            <span className="date-post font-sm color-grey-700">29 May 2026</span>
+                                            <span className="btn btn-border-brand-1 mr-15">{post.category}</span>
+                                        </div>
+                                        <div className="card-info">
+                                            <Link href={`/blog/${post.slug}`}>
+                                                <h5 className="color-brand-2">{post.title}</h5>
+                                            </Link>
+                                            <p className="font-sm color-grey-500 mt-20">{post.excerpt}</p>
+                                            <div className="line-border" />
+                                            <div className="mt-5 d-flex align-items-center justify-content-between pt-0">
+                                                <Link className="btn btn-link font-sm color-brand-2" href={`/blog/${post.slug}`}>
+                                                    View Details
+                                                    <span>
+                                                        <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                                                        </svg>
+                                                    </span>
+                                                </Link>
+                                                <span className="date-post font-sm color-grey-700">{post.date}</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div className="col-lg-4 wow animate__animated animate__fadeIn">
-                                <div className="card-blog-grid hover-up">
-                                    <div className="card-image">
-                                        <Link href="/blog-single">
-                                            <img src="/assets/imgs/page/blog/news2.png" alt="transp" />
-                                        </Link>
-                                        <Link className="btn btn-border-brand-1 mr-15" href="/blog">
-                                            Shipping
-                                        </Link>
-                                    </div>
-                                    <div className="card-info">
-                                        <Link href="/blog-single">
-                                            <h5 className="color-brand-2">How to find reliable logistics company in China and Asia</h5>
-                                        </Link>
-                                        <p className="font-sm color-grey-500 mt-20">Fusce dictum ullamcorper dui, id dignissim arcu volutpat vitae. Aenean mattis vestibulum odio eu facilisis. Aenean quam arcu, blandit at aliquet sit amet, convallis nec risus.</p>
-                                        <div className="line-border" />
-                                        <div className="mt-5 d-flex align-items-center justify-content-between pt-0">
-                                            <Link className="btn btn-link font-sm color-brand-2" href="#">
-                                                View Details
-                                                <span>
-                                                    <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                                                    </svg>
-                                                </span>
-                                            </Link>
-                                            <span className="date-post font-sm color-grey-700">29 May 2026</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-4 wow animate__animated animate__fadeIn">
-                                <div className="card-blog-grid hover-up">
-                                    <div className="card-image">
-                                        <Link href="/blog-single">
-                                            <img src="/assets/imgs/page/blog/news3.png" alt="transp" />
-                                        </Link>
-                                        <Link className="btn btn-border-brand-1 mr-15" href="/blog">
-                                            Shipping
-                                        </Link>
-                                    </div>
-                                    <div className="card-info">
-                                        <Link href="/blog-single">
-                                            <h5 className="color-brand-2">How to find reliable logistics company in China and Asia</h5>
-                                        </Link>
-                                        <p className="font-sm color-grey-500 mt-20">Fusce dictum ullamcorper dui, id dignissim arcu volutpat vitae. Aenean mattis vestibulum odio eu facilisis. Aenean quam arcu, blandit at aliquet sit amet, convallis nec risus.</p>
-                                        <div className="line-border" />
-                                        <div className="mt-5 d-flex align-items-center justify-content-between pt-0">
-                                            <Link className="btn btn-link font-sm color-brand-2" href="#">
-                                                View Details
-                                                <span>
-                                                    <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                                                    </svg>
-                                                </span>
-                                            </Link>
-                                            <span className="date-post font-sm color-grey-700">29 May 2026</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-4 wow animate__animated animate__fadeIn">
-                                <div className="card-blog-grid hover-up">
-                                    <div className="card-image">
-                                        <Link href="/blog-single">
-                                            <img src="/assets/imgs/page/blog/news4.png" alt="transp" />
-                                        </Link>
-                                        <Link className="btn btn-border-brand-1 mr-15" href="/blog">
-                                            Shipping
-                                        </Link>
-                                    </div>
-                                    <div className="card-info">
-                                        <Link href="/blog-single">
-                                            <h5 className="color-brand-2">How to find reliable logistics company in China and Asia</h5>
-                                        </Link>
-                                        <p className="font-sm color-grey-500 mt-20">Fusce dictum ullamcorper dui, id dignissim arcu volutpat vitae. Aenean mattis vestibulum odio eu facilisis. Aenean quam arcu, blandit at aliquet sit amet, convallis nec risus.</p>
-                                        <div className="line-border" />
-                                        <div className="mt-5 d-flex align-items-center justify-content-between pt-0">
-                                            <Link className="btn btn-link font-sm color-brand-2" href="#">
-                                                View Details
-                                                <span>
-                                                    <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                                                    </svg>
-                                                </span>
-                                            </Link>
-                                            <span className="date-post font-sm color-grey-700">29 May 2026</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-4 wow animate__animated animate__fadeIn">
-                                <div className="card-blog-grid hover-up">
-                                    <div className="card-image">
-                                        <Link href="/blog-single">
-                                            <img src="/assets/imgs/page/blog/news5.png" alt="transp" />
-                                        </Link>
-                                        <Link className="btn btn-border-brand-1 mr-15" href="/blog">
-                                            Shipping
-                                        </Link>
-                                    </div>
-                                    <div className="card-info">
-                                        <Link href="/blog-single">
-                                            <h5 className="color-brand-2">How to find reliable logistics company in China and Asia</h5>
-                                        </Link>
-                                        <p className="font-sm color-grey-500 mt-20">Fusce dictum ullamcorper dui, id dignissim arcu volutpat vitae. Aenean mattis vestibulum odio eu facilisis. Aenean quam arcu, blandit at aliquet sit amet, convallis nec risus.</p>
-                                        <div className="line-border" />
-                                        <div className="mt-5 d-flex align-items-center justify-content-between pt-0">
-                                            <Link className="btn btn-link font-sm color-brand-2" href="#">
-                                                View Details
-                                                <span>
-                                                    <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                                                    </svg>
-                                                </span>
-                                            </Link>
-                                            <span className="date-post font-sm color-grey-700">29 May 2026</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-4 wow animate__animated animate__fadeIn">
-                                <div className="card-blog-grid hover-up">
-                                    <div className="card-image">
-                                        <Link href="/blog-single">
-                                            <img src="/assets/imgs/page/blog/news6.png" alt="transp" />
-                                        </Link>
-                                        <Link className="btn btn-border-brand-1 mr-15" href="/blog">
-                                            Shipping
-                                        </Link>
-                                    </div>
-                                    <div className="card-info">
-                                        <Link href="/blog-single">
-                                            <h5 className="color-brand-2">How to find reliable logistics company in China and Asia</h5>
-                                        </Link>
-                                        <p className="font-sm color-grey-500 mt-20">Fusce dictum ullamcorper dui, id dignissim arcu volutpat vitae. Aenean mattis vestibulum odio eu facilisis. Aenean quam arcu, blandit at aliquet sit amet, convallis nec risus.</p>
-                                        <div className="line-border" />
-                                        <div className="mt-5 d-flex align-items-center justify-content-between pt-0">
-                                            <Link className="btn btn-link font-sm color-brand-2" href="#">
-                                                View Details
-                                                <span>
-                                                    <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                                                    </svg>
-                                                </span>
-                                            </Link>
-                                            <span className="date-post font-sm color-grey-700">29 May 2026</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-4 wow animate__animated animate__fadeIn">
-                                <div className="card-blog-grid hover-up">
-                                    <div className="card-image">
-                                        <Link href="/blog-single">
-                                            <img src="/assets/imgs/page/blog/news7.png" alt="transp" />
-                                        </Link>
-                                        <Link className="btn btn-border-brand-1 mr-15" href="/blog">
-                                            Shipping
-                                        </Link>
-                                    </div>
-                                    <div className="card-info">
-                                        <Link href="/blog-single">
-                                            <h5 className="color-brand-2">How to find reliable logistics company in China and Asia</h5>
-                                        </Link>
-                                        <p className="font-sm color-grey-500 mt-20">Fusce dictum ullamcorper dui, id dignissim arcu volutpat vitae. Aenean mattis vestibulum odio eu facilisis. Aenean quam arcu, blandit at aliquet sit amet, convallis nec risus.</p>
-                                        <div className="line-border" />
-                                        <div className="mt-5 d-flex align-items-center justify-content-between pt-0">
-                                            <Link className="btn btn-link font-sm color-brand-2" href="#">
-                                                View Details
-                                                <span>
-                                                    <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                                                    </svg>
-                                                </span>
-                                            </Link>
-                                            <span className="date-post font-sm color-grey-700">29 May 2026</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-4 wow animate__animated animate__fadeIn">
-                                <div className="card-blog-grid hover-up">
-                                    <div className="card-image">
-                                        <Link href="/blog-single">
-                                            <img src="/assets/imgs/page/blog/news8.png" alt="transp" />
-                                        </Link>
-                                        <Link className="btn btn-border-brand-1 mr-15" href="/blog">
-                                            Shipping
-                                        </Link>
-                                    </div>
-                                    <div className="card-info">
-                                        <Link href="/blog-single">
-                                            <h5 className="color-brand-2">How to find reliable logistics company in China and Asia</h5>
-                                        </Link>
-                                        <p className="font-sm color-grey-500 mt-20">Fusce dictum ullamcorper dui, id dignissim arcu volutpat vitae. Aenean mattis vestibulum odio eu facilisis. Aenean quam arcu, blandit at aliquet sit amet, convallis nec risus.</p>
-                                        <div className="line-border" />
-                                        <div className="mt-5 d-flex align-items-center justify-content-between pt-0">
-                                            <Link className="btn btn-link font-sm color-brand-2" href="#">
-                                                View Details
-                                                <span>
-                                                    <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                                                    </svg>
-                                                </span>
-                                            </Link>
-                                            <span className="date-post font-sm color-grey-700">29 May 2026</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-4 wow animate__animated animate__fadeIn">
-                                <div className="card-blog-grid hover-up">
-                                    <div className="card-image">
-                                        <Link href="/blog-single">
-                                            <img src="/assets/imgs/page/blog/news9.png" alt="transp" />
-                                        </Link>
-                                        <Link className="btn btn-border-brand-1 mr-15" href="/blog">
-                                            Shipping
-                                        </Link>
-                                    </div>
-                                    <div className="card-info">
-                                        <Link href="/blog-single">
-                                            <h5 className="color-brand-2">How to find reliable logistics company in China and Asia</h5>
-                                        </Link>
-                                        <p className="font-sm color-grey-500 mt-20">Fusce dictum ullamcorper dui, id dignissim arcu volutpat vitae. Aenean mattis vestibulum odio eu facilisis. Aenean quam arcu, blandit at aliquet sit amet, convallis nec risus.</p>
-                                        <div className="line-border" />
-                                        <div className="mt-5 d-flex align-items-center justify-content-between pt-0">
-                                            <Link className="btn btn-link font-sm color-brand-2" href="#">
-                                                View Details
-                                                <span>
-                                                    <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                                                    </svg>
-                                                </span>
-                                            </Link>
-                                            <span className="date-post font-sm color-grey-700">29 May 2026</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            ))}
                         </div>
                     </div>
                 </section>
@@ -458,7 +116,7 @@ export default function Blog() {
                                 <div className="col-lg-7 mb-30">
                                     <div className="d-flex box-newsletter-right">
                                         <div className="box-map-2 wow animate__animated animate__fadeIn">
-                                            <iframe src="https://www.google.com/maps?q=2+Peel+Lane,+Cheetham+Hill,+Manchester+M8+8RJ&hl=en&output=embed" height={242} style={{ border: 0 }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
+                                            <iframe title="Go Connect Hub location" src="https://www.google.com/maps?q=2+Peel+Lane,+Cheetham+Hill,+Manchester+M8+8RJ&hl=en&output=embed" height={242} style={{ border: 0 }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
                                         </div>
                                         <ul className="list-info-footer">
                                             <li className="wow animate__animated animate__fadeIn">
@@ -469,7 +127,7 @@ export default function Blog() {
                                                 </div>
                                                 <div className="cardInfo">
                                                     <h6 className="font-sm-bold color-grey-900">Address</h6>
-                                                    <p className="font-sm color-grey-900">2 Peel Lane Greater, Cheetham Hill, Manchester M8 8RJ</p>
+                                                    <p className="font-sm color-grey-900">{companyInfo.address}</p>
                                                 </div>
                                             </li>
                                             <li className="wow animate__animated animate__fadeIn">
@@ -480,7 +138,7 @@ export default function Blog() {
                                                 </div>
                                                 <div className="cardInfo">
                                                     <h6 className="font-sm-bold color-grey-900">Email</h6>
-                                                    <p className="font-sm color-grey-900">sales@goconnecthub.uk</p>
+                                                    <p className="font-sm color-grey-900">{companyInfo.email}</p>
                                                 </div>
                                             </li>
                                             <li className="wow animate__animated animate__fadeIn">
@@ -491,7 +149,7 @@ export default function Blog() {
                                                 </div>
                                                 <div className="cardInfo">
                                                     <h6 className="font-sm-bold color-grey-900">Telephone</h6>
-                                                    <p className="font-sm color-grey-900">+44 7404 307411</p>
+                                                    <p className="font-sm color-grey-900">{companyInfo.phoneDisplay}</p>
                                                 </div>
                                             </li>
                                         </ul>
