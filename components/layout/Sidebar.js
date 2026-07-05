@@ -47,6 +47,9 @@ export default function Sidebar({ openClass, handleMobileMenuClose }) {
                                             </ul>
                                         </li>
                                         <li><Link href="/about">About</Link></li>
+                                        <li><Link href="/our-team">Our Team</Link></li>
+                                        <li><Link href="/blog">Blog</Link></li>
+                                        <li><Link href="/faqs">FAQs</Link></li>
                                         <li><Link href="/contact">Contact</Link></li>
                                     </ul>
                                 </nav>

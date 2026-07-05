@@ -1,9 +1,12 @@
 import { useCallback, useRef, useState } from "react";
+import { useRouter } from "next/router";
+import { trackLead } from "./leadTracking";
 
 export const CONTACT_FORM_ACTION = "https://api.rootsbmd.com/public/SaveContactForm";
 export const CONTACT_FORM_EMAIL_TO = "sales@goconnecthub.uk";
 
-export default function useContactForm() {
+export default function useContactForm(leadType = "contact_us") {
+    const router = useRouter();
     const formRef = useRef(null);
     const [toastMessage, setToastMessage] = useState("");
     const [isToastVisible, setIsToastVisible] = useState(false);
@@ -33,15 +36,19 @@ export default function useContactForm() {
                     throw new Error(result.message || "Request failed");
                 }
 
+                trackLead(leadType);
                 formRef.current.reset();
-                showToast(result.message || "Form submitted successfully.");
+                const thankYouPath = leadType === "quote_form"
+                    ? "/thank-you/quote"
+                    : "/thank-you/contact";
+                router.push(thankYouPath);
             } catch (error) {
                 showToast("Submission failed. Please try again.");
             } finally {
                 setIsSubmitting(false);
             }
         },
-        [isSubmitting, showToast]
+        [isSubmitting, leadType, router, showToast]
     );
 
     return {

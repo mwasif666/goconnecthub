@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { trackLead } from "./leadTracking";
 
 export const CONTACT_FORM_ACTION = "https://api.rootsbmd.com/public/SaveContactForm";
 export const CONTACT_FORM_EMAIL_TO = "sales@goconnecthub.uk";
@@ -77,6 +78,15 @@ function getCommonValue(fields, patterns) {
 function getFormTitle(container) {
     const title = container.querySelector("h1, h2, h3, .title-favicon")?.innerText;
     return title?.replace(/\s+/g, " ").trim() || "Website form";
+}
+
+function getLeadType(container) {
+    const configuredType = container.dataset.leadType;
+    if (configuredType) {
+        return configuredType;
+    }
+
+    return /quote/i.test(getFormTitle(container)) ? "quote_form" : "contact_us";
 }
 
 function hasContactIntent(container, fields) {
@@ -222,8 +232,14 @@ async function submitContact(container, button) {
             throw new Error(result.message || "Submission failed. Please try again.");
         }
 
+        trackLead(getLeadType(container));
         setStatus(container, result.message || "Form submitted successfully.", "success");
         clearFields(container);
+        window.location.assign(
+            getLeadType(container) === "quote_form"
+                ? "/thank-you/quote"
+                : "/thank-you/contact"
+        );
     } catch (error) {
         setStatus(container, error.message || "Please try again in a moment.", "error");
     } finally {

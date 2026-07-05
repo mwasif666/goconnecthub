@@ -6089,6 +6089,7 @@ textarea.form-control {
     right: -100px;
     background: url(../imgs/page/homepage1/bg-offer.png) no-repeat top center;
     z-index: 1;
+    pointer-events: none;
 }
 .box-background-offer .bg-under::before {
     content: "";

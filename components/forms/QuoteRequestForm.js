@@ -11,7 +11,7 @@ export default function QuoteRequestForm() {
         isSubmitting,
         toastMessage,
         isToastVisible,
-    } = useContactForm();
+    } = useContactForm("quote_form");
 
     return (
         <form
@@ -22,6 +22,7 @@ export default function QuoteRequestForm() {
             action={CONTACT_FORM_ACTION}
             data-contact-managed="true"
             data-form-title="Get a Quote"
+            data-lead-type="quote_form"
             onSubmit={handleSubmit}
         >
             <input type="hidden" name="email_to" value={CONTACT_FORM_EMAIL_TO} />
