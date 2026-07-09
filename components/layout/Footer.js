@@ -62,9 +62,9 @@ export default function Footer1() {
                                 <div className="col-lg-6 col-md-12 text-center text-lg-start"><span className="color-grey-300 font-md">Go Connect Hub {new Date().getFullYear()}. All rights reserved.</span></div>
                                 <div className="col-lg-6 col-md-12 text-center text-lg-end">
                                     <ul className="menu-bottom">
-                                        <li><Link className="font-sm color-grey-300" href="/term-conditions">Privacy policy</Link></li>
-                                        <li><Link className="font-sm color-grey-300" href="/term-conditions">Cookies</Link></li>
-                                        <li><Link className="font-sm color-grey-300" href="/term-conditions">Terms of service</Link></li>
+                                        <li><Link className="font-sm color-grey-300" href="/privacy-policy">Privacy policy</Link></li>
+                                        <li><Link className="font-sm color-grey-300" href="/privacy-policy#cookies">Cookies</Link></li>
+                                        <li><Link className="font-sm color-grey-300" href="/terms-and-conditions">Terms of service</Link></li>
                                     </ul>
                                 </div>
                             </div>
