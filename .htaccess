@@ -1,19 +1,5 @@
-<IfModule mod_rewrite.c>
-    RewriteEngine On
-    RewriteBase /
+DirectoryIndex index.html
 
-    # Serve real files and folders directly.
-    RewriteCond %{REQUEST_FILENAME} -f [OR]
-    RewriteCond %{REQUEST_FILENAME} -d
-    RewriteRule ^ - [L]
-
-    # Clean URL support for exported Next/static pages.
-    RewriteCond %{REQUEST_FILENAME}.html -f
-    RewriteRule ^(.+?)/?$ $1.html [L]
-
-    RewriteCond %{REQUEST_FILENAME}/index.html -f
-    RewriteRule ^(.+?)/?$ $1/index.html [L]
-
-    # Final fallback for SPA/client-side routes.
-    RewriteRule ^ index.html [L]
-</IfModule>
+# Fasthosts-safe fallback for React/Next static routes.
+# This avoids Apache rewrite directives that may cause 500 errors on restricted hosting.
+ErrorDocument 404 /index.html
