@@ -47,6 +47,32 @@ fbq('track', 'PageView');
                 body {
                     overflow-x: hidden;
                 }
+
+                .legal-page,
+                .legal-content,
+                .legal-content .container,
+                .legal-layout {
+                    overflow: visible !important;
+                }
+
+                .legal-toc {
+                    position: sticky !important;
+                    top: 110px !important;
+                    align-self: start !important;
+                    height: max-content;
+                    max-height: calc(100vh - 130px);
+                    overflow-y: auto;
+                    z-index: 5;
+                }
+
+                @media (max-width: 991px) {
+                    .legal-toc {
+                        position: static !important;
+                        top: auto !important;
+                        max-height: none;
+                        overflow: visible;
+                    }
+                }
             `}</style>
             <GlobalFormHandler />
             {!loading ? <Component {...pageProps} /> : <Preloader />}
